@@ -1,0 +1,190 @@
+*{  margin: 0;}
+
+body{
+    font-size: 1.0em;
+    background-image: url(img/wallpaper.png);
+    background-repeat:repeat;
+    height: 100%;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer {
+  padding: 1%;
+  text-align: center;
+  background-color: #f0e948;
+  font-weight: 600;
+}
+footer a{
+  text-decoration-line: none;
+}
+
+.border{
+  padding: 0% 5%;
+  list-style: none;
+}
+
+.navbar {
+  list-style:none;
+  background-color:  #0adcde;
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  color: #8b3986;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 15px;
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: #dfa8dc;
+}
+
+.active {
+  background-color: #f0e948;
+  color: #8b3986;
+}
+
+.image-bg{
+  width: 100%;
+  border-bottom: 5px solid #4e29;
+  border-top: 4px solid #f0e948;
+}
+
+.labelCatalogue{
+  text-align: center;
+  width: 100%;
+  font-size: 1.7em;
+  background-color: #cf93dd;
+  margin-bottom: 0.7em;
+  margin-top: 0.5em;
+}
+
+.box{
+  position: relative;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2em;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.image-bg {
+  width: 100%;
+  height: auto;
+}
+
+#container{
+  display: flex;
+  padding: 20px 20px;
+  justify-content:space-around;
+  flex-direction: row;
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
+  display: flex;
+  font-size: 1em;
+  background-color: #f0e948;
+  margin-bottom: 1em;
+}
+
+.filterName {
+  text-align: center;
+  font-style: italic;
+  font-size: 1.2em;
+  display: inline;
+}
+
+.selectorButton{
+  font-size: 1em;
+  margin-left: 0.5em;
+}
+
+.image-card{
+  width: 200px;
+  height: 200px;
+}
+
+.p-card{
+  font-size: 0.7em;
+}
+
+.p-name-card{
+  font-size: 0.9em;
+  padding-bottom: 3px;
+  font-weight: 600;
+}
+
+.card-board{
+  width: 90vw;
+  margin: auto;
+}
+
+.cards{
+  display: inline-table;
+  padding: 5px;
+  margin: 5px 10px 20px 19px;
+  background-color: white;
+  border-color: #9fe1e2;
+  border-style: groove;
+  height: 18.75em;
+  width: 12.5em;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+  .row {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .navbar a {
+    float: none;
+    display: block;
+  }
+  .active {
+    background-color: #0adcde;
+  }
+  .center {
+    font-size: 0.8em;
+
+    transform: translate(-50%, -50%);
+  }
+
+  .filterName {
+    font-size: 0.6;
+  }
+
+  footer{
+    font-size: 0.8em;
+  }
+
+  .selectorButton{
+    font-size: 0.6em;
+  }
+
+  .labelCatalogue{
+    font-size: 0.6em;
+  }
+  #container{
+    font-size: 0.8em;
+  }
+
+  #cardsBoard{
+    text-align: center;
+  }
+
+  #container {
+    text-align: center;
+  }
+}
+
+

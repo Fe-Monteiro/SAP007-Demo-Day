@@ -53,7 +53,7 @@ footer a{
   background-image: url('./img/back.jpg');
   background-size: cover;
   background-position: bottom right;
-  height: 65vh;
+  height: 55vh;
   width: 100%;
   border-bottom: 5px solid #4e29;
   border-top: 4px solid #f0e948;
@@ -61,10 +61,13 @@ footer a{
 }
 
 .banner .texto {
-  background: #f09e5270;
+  background: #f09e5280;
   width: 45%;
-  height: 40vh;
-  border-radius: 20px;
+  height: 50vh;
+  border-radius: 15px;
+  font-size: 18px;
+  text-align: left;
+  text-indent: 20px;
 }
 
 .row{
@@ -77,6 +80,7 @@ footer a{
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
+  margin-top: 1%;
 }
 
 .icons-home article {
@@ -95,6 +99,24 @@ footer a{
 .icons-home article a {
   color: black;
   text-decoration: none;
+}
+
+.video:hover {
+  background-color:#DEEFE7;
+  box-shadow: 0px 0px 10px #8b3986, 0px 0px 20px #d280cc, 0px 0px 30px #d26f35;
+  border-radius: 20px;
+}
+
+.curio:hover {
+  background-color:#DEEFE7;
+  box-shadow: 0px 0px 10px #0adcde, 0px 0px 20px #04787a, 0px 0px 30px #d26f35;
+  border-radius: 20px;
+}
+
+.cardsMenu:hover{
+  background-color:#DEEFE7;
+  box-shadow: 0px 0px 10px #8BFF5D, 0px 0px 20px #56C32A, 0px 0px 30px #d26f35;
+  border-radius: 20px;
 }
 
 @media (min-width: 300px) and (max-width: 600px) {

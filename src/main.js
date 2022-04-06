@@ -33,6 +33,13 @@ statusFilter.addEventListener("change", function (event) {
   printingAllCards(statusCards);
 })
 
+const genderFilter = document.getElementById("gender");
+genderFilter.addEventListener("change", function (event) {
+  const genderCards = filter(allData, event.target.value);
+  document.getElementById("averageCalculation").innerHTML = `Essa categoria representa ${average(allData.length, genderCards.length)}% de todos os personagens`
+  printingAllCards(genderCards);
+})
+
 const ordinationAz = document.querySelector("#ordination");
 ordinationAz.addEventListener("change", function (event) {
   const characters = ordination(allData, event.target.value);

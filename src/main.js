@@ -12,6 +12,7 @@ const printingAllCards = (characters) => {
     <dd class="p-card">Especie: ${character.species}</dd>
     <dd class="p-card">Gênero: ${character.gender}</dd>
     <dd class="p-card">Origen: ${character.origin.name}</dd>
+    <dd class="p-card">Aparece no(s) episódio(s): ${character.episode.map((i) => i.replaceAll(/[^0-9$]/g, " "))}.</dd>
     </dl>`;
   }
   document.getElementById("cardsBoard").innerHTML = showingCards;

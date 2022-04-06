@@ -49,16 +49,52 @@ footer a{
   color: #8b3986;
 }
 
-.banner-ram{
+.banner {
+  background-image: url('./img/back.jpg');
+  background-size: cover;
+  background-position: bottom right;
+  height: 65vh;
   width: 100%;
   border-bottom: 5px solid #4e29;
   border-top: 4px solid #f0e948;
+  padding: 2% 5% ;
+}
+
+.banner .texto {
+  background: #f09e5270;
+  width: 45%;
+  height: 40vh;
+  border-radius: 20px;
 }
 
 .row{
   display: flex;
   padding: 0% 4%;
   justify-content: space-between;
+}
+
+.icons-home {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.icons-home article {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 5% 2% 5%;
+}
+
+.icons-home article h3 {
+  padding-bottom: 3%;
+}
+
+.icons-home article a {
+  color: black;
+  text-decoration: none;
 }
 
 @media (min-width: 300px) and (max-width: 600px) {

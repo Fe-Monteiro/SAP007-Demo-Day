@@ -12,6 +12,7 @@
 </head>
 
 <body>
+
   <nav class="navbar">
     <ul class="border">
       <li><a class="active" href="index.html">Home</a></li>
@@ -22,21 +23,49 @@
   </nav>
 
   <header class="banner">
+    <input class="header-input" type="checkbox" id="check">
+  <label id="icone" for="check"></label>
+  <div class="barra">
+    <nav class="menu-text">
+      <a href="./index.html">
+        <div class="Link">Home</div>
+      </a>
+      <a href="about.html">
+        <div class="Link">Rick and Morty</div>
+      </a>
+      <a href="explore.html">
+        <div class="Link">Personagens</div>
+      </a>
+      <a href="videos.html" target="_blank">
+        <div class="Link">Para maratonar</div>
+      </a>
+    </nav>
+  </div>
+  <label for="menu-hamburguer">
+    <div class="mburg">
+      <span class="hamburguer"></span>
+    </div>
+  </label>
     <img src="./img/bannerindex.png" class="banner-ram" alt="banner Rick and Morty">
   </header>
 
   <!--ICONS -->
-  <section class="row">
-    <article><a href="./explore.html"><img src="./img/graphics--.png" class="image" alt="icon-graficos"></a></article>
-    <article><a href="./videos.html"><img src="./img/videos--.png" class="image" alt="icon-episodio"></a></article>
+  <section class="row icons-home">
+    <article>
+      <a href="./videos.html">
+        <img src="./img/videos--.png" class="image" alt="icon-episodio">
+        <h3>Videos</h3>
+        <p>Descricao dos videos aqui embaixo</p>
+    </article>
+
     <article><a href="./explore.html"><img src="./img/cards--.png" class="image" alt="icon-cards"></a></article>
     <article><a href="./about.html"><img src="./img/portal--.png" class="image" alt="icon-about"></a></article>
     <article><a href="https://gorickyourself.com/" target="_blank"><img src="./img/nav--.png" class="image"
           alt="icon-rickyourself"></a></article>
-    </section>
+  </section>
   <footer>
     <p>Desenvolvido por <a href="https://github.com/vivisoares">Viviane Soares</a> e <a
-    href="https://github.com/Tati-Mendonca">Tatiane Mendonça</a></p>
+        href="https://github.com/Tati-Mendonca">Tatiane Mendonça</a></p>
   </footer>
 </body>
 </html>

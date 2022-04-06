@@ -1,5 +1,5 @@
 import data from "./data/rickandmorty/rickandmorty.js";
-import { filter, ordination, average } from './data.js';
+import { filter, ordination, average, searchName } from './data.js';
 
 const allData = data.results
 const printingAllCards = (characters) => {
@@ -37,4 +37,11 @@ ordinationAz.addEventListener("change", function (event) {
   const characters = ordination(allData, event.target.value);
   printingAllCards(characters);
 })
+
+const searchCharacterName = document.getElementById("text-search");
+function searchCharacterNames(e) {
+  const charactersName = searchName(data.results, e.target.value);
+  return printingAllCards(charactersName);
+}
+searchCharacterName.addEventListener("keyup", searchCharacterNames);
 

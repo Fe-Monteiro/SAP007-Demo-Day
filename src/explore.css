@@ -1,12 +1,14 @@
-*{  margin: 0;}
+* {
+  margin: 0;
+}
 
-body{
-    font-size: 1.0em;
-    background-image: url(img/wallpaper.png);
-    background-repeat:repeat;
-    height: 100%;
-    width: 100%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+body {
+  font-size: 1em;
+  background-image: url(img/wallpaper.png);
+  background-repeat: repeat;
+  height: 100%;
+  width: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 footer {
@@ -15,18 +17,18 @@ footer {
   background-color: #f0e948;
   font-weight: 600;
 }
-footer a{
+footer a {
   text-decoration-line: none;
 }
 
-.border{
+.border {
   padding: 0% 5%;
   list-style: none;
 }
 
 .navbar {
-  list-style:none;
-  background-color:  #0adcde;
+  list-style: none;
+  background-color: #0adcde;
   overflow: auto;
 }
 
@@ -48,13 +50,13 @@ footer a{
   color: #8b3986;
 }
 
-.image-bg{
+.image-bg {
   width: 100%;
   border-bottom: 5px solid #4e29;
   border-top: 4px solid #f0e948;
 }
 
-.labelCatalogue{
+.labelCatalogue {
   text-align: center;
   width: 100%;
   font-size: 1.7em;
@@ -63,7 +65,7 @@ footer a{
   margin-top: 0.5em;
 }
 
-.box{
+.box {
   position: relative;
 }
 
@@ -82,10 +84,10 @@ footer a{
   height: auto;
 }
 
-#container{
+#container {
   display: flex;
   padding: 20px 20px;
-  justify-content:space-around;
+  justify-content: space-around;
   flex-direction: row;
   padding-bottom: 0.5em;
   padding-top: 0.5em;
@@ -93,6 +95,7 @@ footer a{
   font-size: 1em;
   background-color: #f0e948;
   margin-bottom: 1em;
+  height: 10vh;
 }
 
 .filterName {
@@ -102,32 +105,32 @@ footer a{
   display: inline;
 }
 
-.selectorButton{
+.selectorButton {
   font-size: 1em;
   margin-left: 0.5em;
 }
 
-.image-card{
+.image-card {
   width: 200px;
   height: 200px;
 }
 
-.p-card{
+.p-card {
   font-size: 0.7em;
 }
 
-.p-name-card{
+.p-name-card {
   font-size: 0.9em;
   padding-bottom: 3px;
   font-weight: 600;
 }
 
-.card-board{
+.card-board {
   width: 90vw;
   margin: auto;
 }
 
-.cards{
+.cards {
   display: inline-table;
   padding: 5px;
   margin: 5px 10px 20px 19px;
@@ -137,7 +140,54 @@ footer a{
   height: 18.75em;
   width: 12.5em;
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.pesquisar {
+  font-size: 16px;
+  border-radius: 10px;
+  border: 2px solid #cf93dd;
+  margin-right: 10px;
+  width: 100%;
+  text-align: left;
+  padding-left: 3%;
+  margin-bottom: 0.3em;
+  margin-top: 2.5em;
+}
+.buscar-e-limpar {
+  justify-content: center;
+}
+.button {
+  color: #cf93dd;
+  background-color: transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 17px;
+  border: 2px solid;
+  position: relative;
+}
+/*Botão top*/
+.fixed-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 10px;
+  right: 4px;
+  width: 50px;
+  height: 50px;
+  background-color: #87f583;
+  text-decoration: none;
+  border-radius: 10px;
+}
+.fixed-button::after {
+  content: "↑";
+  font-size: 32px;
+  font-weight: bold;
+  color: aliceblue;
+  transition: 250ms;
+}
+.fixed-button:hover::after {
+  margin-top: -8px;
 }
 
 @media (min-width: 300px) and (max-width: 600px) {
@@ -163,22 +213,22 @@ footer a{
     font-size: 0.6;
   }
 
-  footer{
+  footer {
     font-size: 0.8em;
   }
 
-  .selectorButton{
+  .selectorButton {
     font-size: 0.6em;
   }
 
-  .labelCatalogue{
+  .labelCatalogue {
     font-size: 0.6em;
   }
-  #container{
+  #container {
     font-size: 0.8em;
   }
 
-  #cardsBoard{
+  #cardsBoard {
     text-align: center;
   }
 
@@ -186,5 +236,3 @@ footer a{
     text-align: center;
   }
 }
-
-

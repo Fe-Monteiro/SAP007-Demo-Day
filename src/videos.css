@@ -12,7 +12,6 @@ a:active {
 }
 
 body {
-  font-size: 1em;
   background-image: url(img/videos.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -31,7 +30,7 @@ body {
   width: 100%;
 }
 
-h1 {
+.net, .hbo {
   font-size: 1.7em;
   color: whitesmoke;
   text-align: center;

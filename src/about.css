@@ -177,7 +177,7 @@ footer a {
 .hamburguer {
   position: relative;
   display: none;
-  background: #101010;
+  background: #0e0e0e;
   width: 30px;
   height: 3px;
   top: 29px;
@@ -187,8 +187,8 @@ footer a {
 
 .hamburguer:before,
 .hamburguer:after {
-  background: #0a0a0a;
-  content: "";
+  background: #131313;
+  content: '';
   display: block;
   width: 100%;
   height: 100%;

@@ -1,72 +1,78 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" href="./img/favicon.ico" />
-  <link rel="stylesheet" href="videos.css" />
-  <script src="main.js" type="module"></script>
-  <title>Explorar</title>
-</head>
-<header>
-  <input class="header-input" type="checkbox" id="check">
-  <label id="icone" for="check"></label>
-  <div class="barra">
-    <nav class="menu-text">
-      <a href="./index.html">
-        <div class="Link">Home</div>
-      </a>
-      <a href="about.html">
-        <div class="Link">Rick and Morty</div>
-      </a>
-      <a href="explore.html">
-        <div class="Link">Personagens</div>
-      </a>
-      <a href="videos.html" target="_blank">
-        <div class="Link">Para maratonar</div>
-      </a>
-    </nav>
-  </div>
-  <label for="menu-hamburguer">
-    <div class="mburg">
-      <span class="hamburguer"></span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./img/favicon.ico" />
+    <link rel="stylesheet" href="videos.css" />
+    <script src="main.js" type="module"></script>
+    <title>Explorar</title>
+  </head>
+  <header>
+    <input class="header-input" type="checkbox" id="check" />
+    <label id="icone" for="check"></label>
+    <div class="barra">
+      <nav class="menu-text">
+        <a href="./index.html">
+          <div class="Link">Home</div>
+        </a>
+        <a href="explore.html">
+          <div class="Link">Personagens</div>
+        </a>
+        <a href="about.html">
+          <div class="Link">Curiosidades</div>
+        </a>
+        <a href="videos.html" target="_blank">
+          <div class="Link">Para maratonar</div>
+        </a>
+      </nav>
     </div>
-  </label>
+    <label for="menu-hamburguer">
+      <div class="mburg">
+        <span class="hamburguer"></span>
+      </div>
+    </label>
+  </header>
+  <body>
+    <nav class="navbar">
+      <ul class="border">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="explore.html">Personagens</a></li>
+        <li><a href="about.html">Curiosidades</a></li>
+        <li><a href="videos.html" class="active">Para Maratonar</a></li>
+      </ul>
+    </nav>
 
-</header>
-<body>
-  <nav class="navbar">
-    <ul class="border">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="explore.html">Personagens</a></li>
-      <li><a href="about.html">Curiosidades</a></li>
-      <li><a href="videos.html" class="active">Para Maratonar</a></li>
-    </ul>
-  </nav>
+    <main>
+      <section class="toWatch">
+        <h1 class="net">Disponível da 1ª a 4ª temporada:</h1>
+        <a href="https://www.netflix.com/title/80014749/" target="_blank">
+          <img class="watch" src="img/netflix.png" alt="netflix logo" />
+        </a>
+        <h1 class="hbo">Disponível da 1ª a 5ª temporada:</h1>
+        <a
+          href="https://play.hbomax.com/page/urn:hbo:page:GXkRjxwjR68PDwwEAABKJ:type:series?c=buy_flow_complete&pid=hbomax&af_channel=Owned"
+          target="_blank"
+        >
+          <img class="watch" src="img/hbo.png" alt="hbo logo" />
+        </a>
+      </section>
+    </main>
 
-  <main>
-    <section class="toWatch">
-      <h1>Disponível da 1ª a 4ª temporada:</h1>
-      <a href="https://www.netflix.com/title/80014749/" target="_blank"> <img class="watch" src="img/netflix.png"
-          alt="netflix logo" /> </a>
-    </section>
-    <section class="toWatch">
-      <h1>Disponível da 1ª a 5ª temporada:</h1>
-      <a href="https://play.hbomax.com/page/urn:hbo:page:GXkRjxwjR68PDwwEAABKJ:type:series?c=buy_flow_complete&pid=hbomax&af_channel=Owned"
-        target="_blank"> <img class="watch" src="img/hbo.png" alt="hbo logo" /> </a>
-    </section>
-  </main>
-
-  <footer>
-    <p>Desenvolvido por <a href="https://github.com/daianeex"> Daiane Gonçalves </a> |
-      <a href="https://github.com/daianeoltramari">Daiane Oltramari</a> |
-      <a href="https://github.com/Fe-Monteiro">Fernanda Monteiro</a> |
-      <a href="https://github.com/jaquelinedeoliveira93">Jaqueline de Oliveira</a> |
-      <a href="https://github.com/jessikamirella">Jessika Mirella</a> |
-      <a href="https://github.com/la4ri">Larissa Moreira</a>
-       e <a href="https://github.com/vivisoares"> Viviane Soares </a> © </p>
-  </footer>
-</body>
+    <footer>
+      <p>
+        Desenvolvido por
+        <a href="https://github.com/daianeex"> Daiane Gonçalves </a> |
+        <a href="https://github.com/daianeoltramari">Daiane Oltramari</a> |
+        <a href="https://github.com/Fe-Monteiro">Fernanda Monteiro</a> |
+        <a href="https://github.com/jaquelinedeoliveira93"
+          >Jaqueline de Oliveira</a
+        >
+        | <a href="https://github.com/jessikamirella">Jessika Mirella</a> |
+        <a href="https://github.com/la4ri">Larissa Moreira</a>
+        e <a href="https://github.com/vivisoares"> Viviane Soares </a> ©
+      </p>
+    </footer>
+  </body>
 </html>

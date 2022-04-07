@@ -106,6 +106,90 @@ footer a {
   text-decoration: none;
 }
 
+#check {
+  display: none;
+}
+#icone {
+  cursor: pointer;
+  padding: 32px;
+  position: absolute;
+  z-index: 1;
+  top: 20px;
+  left: 20px;
+}
+
+#check:checked ~ .barra {
+  transform: translateX(250px);
+}
+
+#check:checked ~ .barra nav a .Link {
+  opacity: 1;
+  transition-delay: 0.3s;
+}
+
+.mburg {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  top: 25px;
+  left: 25px;
+}
+
+.hamburguer {
+  position: relative;
+  display: none;
+  background: #101010;
+  width: 30px;
+  height: 3px;
+  top: 29px;
+  left: 15px;
+  transition: 0.5s ease-in-out;
+}
+
+.hamburguer:before,
+.hamburguer:after {
+  background: #0a0a0a;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: 0.5s ease-in-out;
+}
+
+.hamburguer:before {
+  top: -10px;
+}
+
+.hamburguer:after {
+  bottom: -10px;
+}
+
+input:checked ~ label .hamburguer {
+  transform: rotate(45deg);
+}
+
+input:checked ~ label .hamburguer:before {
+  transform: rotate(90deg);
+  top: 0;
+}
+
+input:checked ~ label .hamburguer:after {
+  transform: rotate(90deg);
+  bottom: 0;
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+  .navbar a {
+    float: none;
+    display: none;
+  }
+
+  .hamburguer {
+    display: block;
+  }
+
 .Link {
   background-color: #d9d271;
   padding: 25px;
@@ -122,17 +206,6 @@ footer a {
   color: #c1d9b0;
 }
 
-#check {
-  display: none;
-}
-#icone {
-  cursor: pointer;
-  padding: 32px;
-  position: absolute;
-  z-index: 1;
-  top: 20px;
-  left: 20px;
-}
 .video:hover {
   background-color: #deefe7;
   box-shadow: 0px 0px 10px #8b3986, 0px 0px 20px #d280cc, 0px 0px 30px #d26f35;
@@ -151,78 +224,10 @@ footer a {
   border-radius: 20px;
 }
 
+
+
+
 @media screen and (min-width: 481px) and (max-width: 768px) {
-  #check:checked ~ .barra {
-    transform: translateX(250px);
-  }
-
-  #check:checked ~ .barra nav a .Link {
-    opacity: 1;
-    transition-delay: 0.3s;
-  }
-
-  .mburg {
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    position: fixed;
-    top: 25px;
-    left: 25px;
-  }
-
-  .hamburguer {
-    position: relative;
-    display: none;
-    background: #101010;
-    width: 30px;
-    height: 3px;
-    top: 29px;
-    left: 15px;
-    transition: 0.5s ease-in-out;
-  }
-
-  .hamburguer:before,
-  .hamburguer:after {
-    background: #0a0a0a;
-    content: "";
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    transition: 0.5s ease-in-out;
-  }
-
-  .hamburguer:before {
-    top: -10px;
-  }
-
-  .hamburguer:after {
-    bottom: -10px;
-  }
-
-  input:checked ~ label .hamburguer {
-    transform: rotate(45deg);
-  }
-
-  input:checked ~ label .hamburguer:before {
-    transform: rotate(90deg);
-    top: 0;
-  }
-
-  input:checked ~ label .hamburguer:after {
-    transform: rotate(90deg);
-    bottom: 0;
-  }
-
-  @media (min-width: 300px) and (max-width: 600px) {
-    .navbar a {
-      float: none;
-      display: none;
-    }
-
-    .hamburguer {
-      display: block;
-    }
 
     .active {
       background-color: #0adcde;
@@ -268,7 +273,7 @@ footer a {
   @media screen and (max-width: 480px) {
     .navbar a {
       float: none;
-      display: block;
+      display: none;
     }
 
     .active {
@@ -279,6 +284,18 @@ footer a {
       font-size: 0.8em;
     }
 
+    @media (max-width: 600px) {
+
+      .navbar a {
+        float: none;
+        display: none;
+      }
+
+      .hamburguer{
+        display: block;
+      }
+
+    }
     .banner {
       background-image: url("./img/responsivoHome.jpg");
       background-size: cover;
@@ -313,3 +330,5 @@ footer a {
     }
   }
 }
+
+

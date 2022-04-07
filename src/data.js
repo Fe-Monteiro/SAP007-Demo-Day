@@ -2,9 +2,13 @@ export const filter = (characters, characteristics) => {
   const results = characters.filter((item) => {
     if (characteristics === item.species) {
       return item.species === characteristics;
-    } else (characteristics === item.status)
-    return item.status === characteristics
-  })
+    } 
+    if (characteristics === item.status) {
+    return item.status === characteristics;
+    } 
+    if (characteristics === item.gender) {
+    return item.gender === characteristics;
+  }})
   return results
 };
 

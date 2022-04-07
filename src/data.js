@@ -1,12 +1,14 @@
-export const filter = (characters, characteristics) => {
-  const results = characters.filter((item) => {
-    if (characteristics === item.species) {
-      return item.species === characteristics;
-    } else (characteristics === item.status)
-    return item.status === characteristics
+export const filterStatus = (data, value) => {
+  return data.filter((item) => {
+    return item.status === value
   })
-  return results
-};
+  }
+
+export const filterSpecie = (data, value) => {
+  return data.filter((item) => {
+    return item.species === value
+  })
+  }
 
 export const ordination = (characters, order) => {
   const listCharacters = [...characters]

@@ -77,7 +77,7 @@
             title="specie"
             class="selectorButton"
           >
-            <option selected disabled value="">Todos</option>
+            <option selected disabled value=""></option>
             <option value="Human">Humano</option>
             <option value="Humanoid">Humanóide</option>
             <option value="Alien">Alien</option>
@@ -89,43 +89,42 @@
             <option value="Cronenberg">Cronenberg</option>
           </select>
         </section>
-
         <!--BARRA DE FILTRAGEM POR STATUS -->
         <section>
-          <label for="cards" class="filterName">Status: </label>
-          <select
-            name="filter"
-            id="status"
-            title="status"
-            class="selectorButton"
-          >
-            <option selected disabled value=""></option>
+          <!-- <label for="cards" class="filterName">Status: </label> -->
+          <select name="filter" id="status" title="status" class="selectorButton">
+            <option selected disabled value="">Status</option>
             <option value="Alive">Vivo</option>
             <option value="Dead">Morto</option>
             <option value="unknown">Desconhecido</option>
           </select>
+        </section> 
+        <section>
+          <!--BARRA DE FILTRAGEM POR GÊNERO -->
+          <!-- <label for="cards" class="filterName">Gênero: </label> -->
+          <select name="filter" id="gender" title="gender" class="selectorButton">
+            <option selected disabled value="">Gênero</option>
+            <option value="Female">Feminino</option>
+            <option value="Male">Masculino</option>
+            <option value="Genderless">Sem gênero</option>
+            <option value="unknown">Desconhecido</option>
+          </select>
         </section>
-
         <!--BARRA DE FILTRAGEM POR ORDENAÇÃO -->
         <section>
-          <label for="cards" class="filterName">Ordem Alfabética: </label>
-          <select
-            name="filter"
-            id="ordination"
-            title="order"
-            class="selectorButton"
-          >
-            <option selected disabled value=""></option>
+          <!-- <label for="cards" class="filterName">Ordem Alfabética: </label> -->
+          <select name="filter" id="ordination" title="order" class="selectorButton">
+            <option selected disabled value="">Ordem Alfabética</option>
             <option value="AZ">A - Z</option>
             <option value="ZA">Z - A</option>
           </select>
-        </section>
+        </section>  
         <input
           type="reset"
           id="clearFiltros"
           class="button"
           onclick="window.location.reload()"
-          value="Limpar Filtros"
+          value="Limpar"
         />
       </div>
     </div>
@@ -134,11 +133,13 @@
       <p id="cardsBoard"></p>
     </main>
     <footer>
-      <p>
-        Desenvolvido por
-        <a href="https://github.com/vivisoares">Viviane Soares</a> e
-        <a href="https://github.com/Tati-Mendonca">Tatiane Mendonça</a>
-      </p>
+      <p>Desenvolvido por <a href="https://github.com/daianeex"> Daiane Gonçalves </a> |
+        <a href="https://github.com/daianeoltramari">Daiane Oltramari</a> |
+        <a href="https://github.com/Fe-Monteiro">Fernanda Monteiro</a> |
+        <a href="https://github.com/jaquelinedeoliveira93">Jaqueline de Oliveira</a> |
+        <a href="https://github.com/jessikamirella">Jessika Mirella</a> |
+        <a href="https://github.com/la4ri">Larissa Moreira</a>
+         e <a href="https://github.com/vivisoares"> Viviane Soares </a> © </p>
     </footer>
     <a href="#" class="fixed-button"></a>
   </body>

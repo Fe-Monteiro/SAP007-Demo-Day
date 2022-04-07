@@ -1,107 +1,145 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./img/favicon.ico" />
+    <link rel="stylesheet" href="explore.css" />
+    <script src="main.js" type="module"></script>
+    <title>Personagens</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="./img/favicon.ico">
-  <link rel="stylesheet" href="explore.css" />
-  <script src="main.js" type="module"></script>
-  <title> Personagens </title>
-</head>
-
-<body>
-  <!--BARRA DE NAV  -->
-  <nav class="navbar">
-    <ul class="border">
-      <li><a href="index.html"> Home </a></li>
-      <li><a href="about.html"> Rick and Morty </a></li>
-      <li><a href="explore.html" class="active"> Personagens </a></li>
-      <li><a href="videos.html"> Para maratonar </a></li>
-    </ul>
-  </nav>
-
-  <header>
-    <div class="box">
-      <input class="header-input" type="checkbox" id="check">
-  <label id="icone" for="check"></label>
-  <div class="barra">
-    <nav class="menu-text">
-      <a href="./index.html">
-        <div class="Link">Home</div>
-      </a>
-      <a href="about.html">
-        <div class="Link">Rick and Morty</div>
-      </a>
-      <a href="explore.html">
-        <div class="Link">Personagens</div>
-      </a>
-      <a href="videos.html" target="_blank">
-        <div class="Link">Para maratonar</div>
-      </a>
+  <body>
+    <!--BARRA DE NAV  -->
+    <nav class="navbar">
+      <ul class="border">
+        <li><a href="index.html"> Home </a></li>
+        <li><a href="about.html"> Rick and Morty </a></li>
+        <li><a href="explore.html" class="active"> Personagens </a></li>
+        <li><a href="videos.html"> Para maratonar </a></li>
+      </ul>
     </nav>
-  </div>
-  <label for="menu-hamburguer">
-    <div class="mburg">
-      <span class="hamburguer"></span>
+
+    <header>
+      <div class="box">
+        <input class="header-input" type="checkbox" id="check" />
+        <label id="icone" for="check"></label>
+        <div class="barra">
+          <nav class="menu-text">
+            <a href="./index.html">
+              <div class="Link">Home</div>
+            </a>
+            <a href="about.html">
+              <div class="Link">Rick and Morty</div>
+            </a>
+            <a href="explore.html">
+              <div class="Link">Personagens</div>
+            </a>
+            <a href="videos.html" target="_blank">
+              <div class="Link">Para maratonar</div>
+            </a>
+          </nav>
+        </div>
+        <label for="menu-hamburguer">
+          <div class="mburg">
+            <span class="hamburguer"></span>
+          </div>
+        </label>
+        <img src="./img/bannerpersonas.png" class="image-bg" alt="banner" />
+        <p id="averageCalculation" class="center">
+          Você está visualizando 100% dos personagens
+        </p>
+      </div>
+    </header>
+
+    <div>
+      <p for="catalogue" class="labelCatalogue">▼ CATÁLOGO DE PERSONAGENS ▼</p>
+      <div id="container">
+        <!--BARRA DE FILTRAGEM  -->
+        <section>
+          <span class="form">
+            <form class="buscar-e-limpar">
+              <input
+                class="pesquisar"
+                id="text-search"
+                type="search"
+                placeholder="Buscar nome"
+              />
+            </form>
+          </span>
+        </section>
+        <section>
+          <label for="cards" class="filterName">Espécie: </label>
+          <select
+            name="filter"
+            id="species"
+            title="specie"
+            class="selectorButton"
+          >
+            <option selected disabled value="">Todos</option>
+            <option value="Human">Humano</option>
+            <option value="Humanoid">Humanóide</option>
+            <option value="Alien">Alien</option>
+            <option value="Poopybutthole">Poopybutthole</option>
+            <option value="Mytholog">Mitológico</option>
+            <option value="Animal">Animal</option>
+            <option value="Vampire">Vampiro</option>
+            <option value="Robot">Robótico</option>
+            <option value="Cronenberg">Cronenberg</option>
+          </select>
+        </section>
+
+        <!--BARRA DE FILTRAGEM POR STATUS -->
+        <section>
+          <label for="cards" class="filterName">Status: </label>
+          <select
+            name="filter"
+            id="status"
+            title="status"
+            class="selectorButton"
+          >
+            <option selected disabled value=""></option>
+            <option value="Alive">Vivo</option>
+            <option value="Dead">Morto</option>
+            <option value="unknown">Desconhecido</option>
+          </select>
+        </section>
+
+        <!--BARRA DE FILTRAGEM POR ORDENAÇÃO -->
+        <section>
+          <label for="cards" class="filterName">Ordem Alfabética: </label>
+          <select
+            name="filter"
+            id="ordination"
+            title="order"
+            class="selectorButton"
+          >
+            <option selected disabled value=""></option>
+            <option value="AZ">A - Z</option>
+            <option value="ZA">Z - A</option>
+          </select>
+        </section>
+        <input
+          type="reset"
+          id="clearFiltros"
+          class="button"
+          onclick="window.location.reload()"
+          value="Limpar Filtros"
+        />
+      </div>
     </div>
-  </label>
-      <img src="./img/bannerpersonas.png" class="image-bg" alt="banner">
-      <p id="averageCalculation" class="center">Você está visualizando 100% dos personagens</p>
-    </div>
-  </header>
 
-  <div>
-    <p for="catalogue" class="labelCatalogue"> ▼ CATÁLOGO DE PERSONAGENS ▼ </p>
-    <div id="container">
-
-      <!--BARRA DE FILTRAGEM  -->
-      <section>
-        <label for="cards" class="filterName">Espécie: </label>
-        <select name="filter" id="species" title="specie" class="selectorButton">
-          <option selected disabled value="">Todos</option>
-          <option value="Human">Humano</option>
-          <option value="Humanoid">Humanóide</option>
-          <option value="Alien">Alien</option>
-          <option value="Poopybutthole">Poopybutthole</option>
-          <option value="Mytholog">Mitológico</option>
-          <option value="Animal">Animal</option>
-          <option value="Vampire">Vampiro</option>
-          <option value="Robot">Robótico</option>
-          <option value="Cronenberg">Cronenberg</option>
-        </select>
-      </section>
-
-      <!--BARRA DE FILTRAGEM POR STATUS -->
-      <section>
-        <label for="cards" class="filterName">Status: </label>
-        <select name="filter" id="status" title="status" class="selectorButton">
-          <option selected disabled value=""></option>
-          <option value="Alive">Vivo</option>
-          <option value="Dead">Morto</option>
-          <option value="unknown">Desconhecido</option>
-        </select>
-      </section>
-
-      <!--BARRA DE FILTRAGEM POR ORDENAÇÃO -->
-      <section>
-        <label for="cards" class="filterName">Ordem Alfabética: </label>
-        <select name="filter" id="ordination" title="order" class="selectorButton">
-          <option selected disabled value=""></option>
-          <option value="AZ">A - Z</option>
-          <option value="ZA">Z - A</option>
-        </select>
-      </section>
-    </div>
-  </div>
-
-  <main class="card-board">
-    <p id="cardsBoard"></p>
-  </main>
-  <footer>
-    <p>Desenvolvido por <a href="https://github.com/vivisoares">Viviane Soares</a> e <a
-    href="https://github.com/Tati-Mendonca">Tatiane Mendonça</a></p>
-  </footer>
-</body>
+    <main class="card-board">
+      <p id="cardsBoard"></p>
+    </main>
+    <footer>
+      <p>
+        Desenvolvido por
+        <a href="https://github.com/vivisoares">Viviane Soares</a> e
+        <a href="https://github.com/Tati-Mendonca">Tatiane Mendonça</a>
+      </p>
+    </footer>
+    <a href="#" class="fixed-button"></a>
+  </body>
 </html>

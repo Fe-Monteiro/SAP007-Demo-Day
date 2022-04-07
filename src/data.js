@@ -22,3 +22,10 @@ export const average = (total, portion) => {
   return averageCalculation
 }
 
+export const searchName = (data, condition) => {
+  const result = data.filter((character) =>
+    character.name.toLowerCase().includes(condition.toLowerCase())
+  );
+  return result;
+};
+

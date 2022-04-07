@@ -71,28 +71,37 @@ footer a{
   text-align: justify;
 }
 
-.aboutTheShow{
-  background-color: #f7e8fa;
+.curiosidades, .fontes{
+  display: flex;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 4%;
+  padding: 2%;
+  background-color: rgba(0, 0, 0, 0.8);
   border-radius: 10px;
+}
+
+.curiosidades, .fontes a:visited{
+  color:#ffffff;
+}
+
+.texto-curiosidades, .fontes p, a{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  color: #ffffff;
   text-align: justify;
-  padding: 0% 4% 3% 4%;
-  margin: 2px;
-  border: transparent thin solid;
 }
 
-.imgaboutTheShow{
-  border-radius: 20px;
-  margin-right: 4%;
-  float: left;
-  border: #0adcde;
-  border-style:groove;
+.imagens-curiosidades{
+  width: 100%;
+  height: auto;
+  padding-bottom: 2%;
 }
 
- .aboutTheShow img{
-  max-width: 45%;
-}
+@media screen and (min-width: 481px) and (max-width:768px){
 
-@media (max-width: 600px) {
   .row {
     -webkit-flex-direction: column;
     flex-direction: column;
@@ -111,8 +120,53 @@ footer a{
     font-size: 0.8em;
   }
 
-  .aboutTheShow{
-    padding-top: 3%;
-    padding-right: 4%;
+  .curiosidades, .fontes {
+    display: flex;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4%;
+    padding: 2%;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+}
+  .imagens-curiosidades {
+    width: 100%;
+    height: auto;
+    padding-bottom: 2%;
+  }
+  .texto-curiosidades, .fontes p, a {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      color: #ffffff;
+      text-align: justify;
+      font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 480px){
+  .curiosidades, .fontes {
+    display: flex;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4%;
+    padding: 2%;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+}
+  .imagens-curiosidades {
+    width: 100%;
+    height: auto;
+    padding-bottom: 2%;
+  }
+  .texto-curiosidades, .fontes p, a {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      color: #ffffff;
+      text-align: justify;
+      font-size: 0.9rem;
   }
 }

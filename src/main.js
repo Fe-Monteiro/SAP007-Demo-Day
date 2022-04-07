@@ -1,5 +1,5 @@
 import data from "./data/rickandmorty/rickandmorty.js";
-import { filter, ordination, average, searchName } from './data.js';
+import { filterStatus, filterSpecie, ordination, average, searchName } from './data.js';
 
 const allData = data.results
 const printingAllCards = (characters) => {
@@ -20,15 +20,27 @@ const printingAllCards = (characters) => {
 printingAllCards(allData);
 
 const speciesFilter = document.getElementById("species");
-speciesFilter.addEventListener("change", function (event) {
-  const speciesCards = filter(allData, event.target.value);
+speciesFilter.addEventListener("change", (event) => {
+  let speciesCards = filterSpecie(allData, event.target.value);
+
+  if (statusFilter.value) {
+    speciesCards = speciesCards.filter((item) =>{
+      return item.status === statusFilter.value
+    })
+  }
   document.getElementById("averageCalculation").innerHTML = `Essa categoria representa ${average(allData.length, speciesCards.length)}% de todos os personagens`
   printingAllCards(speciesCards);
 })
 
 const statusFilter = document.getElementById("status");
-statusFilter.addEventListener("change", function (event) {
-  const statusCards = filter(allData, event.target.value);
+statusFilter.addEventListener("change", (event) => {
+  let statusCards = filterStatus(allData, event.target.value);
+
+  if (speciesFilter.value) {
+    statusCards = statusCards.filter((item) =>{
+      return item.species === speciesFilter.value
+    })
+  }
   document.getElementById("averageCalculation").innerHTML = `Essa categoria representa ${average(allData.length, statusCards.length)}% de todos os personagens`
   printingAllCards(statusCards);
 })

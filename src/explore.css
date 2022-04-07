@@ -411,6 +411,7 @@ input:checked~label .hamburguer:after {
 }
 
 @media (min-width: 300px) and (max-width: 600px) {
+
   .row {
     -webkit-flex-direction: column;
     flex-direction: column;

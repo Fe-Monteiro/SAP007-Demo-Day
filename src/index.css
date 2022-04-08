@@ -245,6 +245,16 @@ footer {
 }
 /* AJUSTES PARA TELAS PEQUENAS */
 @media screen and (max-width: 480px) {
+  .navbar {
+    display: none;
+  }
+
+  .banner {
+    height: auto;
+    padding-top: 15%;
+    padding-bottom: 8%;
+  }
+
   .texto {
     width: 95%;
     margin-top: 0;
@@ -257,4 +267,5 @@ footer {
     justify-content: center;
     align-items: center;
   }
+
 }

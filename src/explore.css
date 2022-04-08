@@ -217,6 +217,7 @@ footer a {
   position: fixed;
   transition: all 0.2s linear;
   left: -15.625em;
+  z-index: 1;
 }
 
 .menu-text {
@@ -428,12 +429,29 @@ input:checked~label .hamburguer:after {
 
   .center {
     font-size: 0.8em;
-
     transform: translate(-50%, -50%);
   }
 
-  .filterName, .button, .pesquisar {
-    font-size: 0.6em;
+  .labelCatalogue {
+    font-size: 1em;
+  }
+
+  .buscar-e-limpar {
+    width: 100%;
+    align-items: center;
+  }
+
+  .buscar-e-limpar input {
+    height: 1.8em;
+    margin-right: 0;
+    margin-bottom: 1em;
+  }
+
+  #clearFiltros {
+    width: 50%;
+    height: auto;
+    padding: 2% 0;
+    margin: 5% auto 2%;
   }
 
   .hamburguer {
@@ -442,23 +460,24 @@ input:checked~label .hamburguer:after {
 
   .hamburguer:before,
   .hamburguer:after, .hamburguer {
-    background: #87f583;
+    background: #fff;
   }
 
   footer {
-    font-size: 0.8em;
-  }
-
-  .selectorButton {
-    font-size: 0.6em;
-  }
-
-  .labelCatalogue {
     font-size: 0.6em;
   }
 
   #container {
-    font-size: 0.8em;
+    flex-direction: column;
+    height: auto;
+    padding-top: 1.8em;
+  }
+
+  #container select {
+    height: 1.8em;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 1%;
   }
 
   #cardsBoard {
@@ -470,8 +489,14 @@ input:checked~label .hamburguer:after {
   }
 
   .mburg{
-    margin-top: -10%;
-    margin-left: -9%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  #icone {
+    z-index: 2;
   }
 
   .fixed-button{

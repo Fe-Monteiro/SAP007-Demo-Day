@@ -99,7 +99,6 @@ footer a {
   padding: 1.25em;
   justify-content: space-around;
   flex-direction: row;
-  padding-top: 0.5em;
   font-size: 1em;
   background-color: #f0e948;
   margin-bottom: 1em;
@@ -115,9 +114,11 @@ footer a {
 
 .selectorButton {
   font-size: 1em;
-  margin-left: 0.5em;
+  margin-left: 10%;
   border: 0.125em solid #cf93dd;
   border-radius: 0.625em;
+  display: flex;
+  justify-content: center;
 }
 
 .image-card {
@@ -411,7 +412,7 @@ input:checked~label .hamburguer:after {
   bottom: 0;
 }
 
-@media (min-width: 300px) and (max-width: 600px) {
+@media (min-width: 300px) and (max-width: 955px) {
 
   .row {
     -webkit-flex-direction: column;
@@ -505,4 +506,9 @@ input:checked~label .hamburguer:after {
     width: 33px;
     height: 31px;
   }
+}
+@media (min-width: 600px) and (max-width: 1190px){
+  .pesquisar{
+    width: 80%;
+  } 
 }

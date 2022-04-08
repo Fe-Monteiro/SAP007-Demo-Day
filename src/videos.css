@@ -1,3 +1,12 @@
+:root {
+  --darkpurple: #3C396D;
+  --darkpurplefaded: #a8a6dbb4;
+  --softyellow: #fffa98;
+  --bg: #deefe7;
+  --navbartext: #f0e948;
+  --navbartexthover: rgb(125, 45, 151);
+  --catalogue: #65a17b;}
+
 * {
   margin: 0;
 } /* ZEREI MARGENS */
@@ -32,38 +41,39 @@ body {
 
 .net, .hbo {
   font-size: 1.7em;
-  color: whitesmoke;
+  color: var(--catalogue);
   text-align: center;
   margin-left: 30%;
   margin-top: 5%;
 }
 
 footer {
-  padding: 1%;
+  margin-top: 4em;
+  padding-bottom: 1%;
+  padding-top: 1%;
   text-align: center;
-  background-color: #f0e948;
+  color: var(--darkpurple);
+  background-color: var(--softyellow);
   font-weight: 600;
-  position: absolute;
-  bottom: 0;
-  width: 98%;
+  width: 100%;
+  height: auto;
 }
 
 footer a {
   text-decoration-line: none;
 }
 
-/* NAVBAR */
-
 .navbar {
   list-style: none;
-  background-color: #0adcde;
+  background-color: var(--darkpurple);
   overflow: auto;
-  border-bottom: 4px solid #f0e948;
+  width: 100%;
+  border-bottom: 4px solid var(--softyellow);
 }
 
 .navbar a {
   float: left;
-  color: #8b3986;
+  color: var(--softyellow);
   text-decoration: none;
   font-weight: 600;
   padding: 15px;
@@ -71,18 +81,18 @@ footer a {
 }
 
 .navbar a:hover {
-  background-color: #dfa8dc;
+  background-color: var(--darkpurplefaded);
+  color: var(--navbar);
 }
 
 .active {
-  background-color: #f0e948;
-  color: #8b3986;
+  color: var(--darkpurple);
+  background-color: var(--softyellow);
 }
 
-.banner {
-  width: 100%;
-  border-bottom: 5px solid rgb(68, 238, 34);
-  border-top: 4px solid #f0e948;
+.banner-ram {
+  display: flex;
+  width: auto;
 }
 
 .watch {
@@ -90,15 +100,9 @@ footer a {
   margin-left: 55%;
   margin-bottom: 0;
 }
-/*
-.toWatch {
-  background-position: 0%;
-  margin-top: ;
-  margin-left: 10%;
-  padding: 0;
-} */
+
 .barra {
-  background-color: #d9d271;
+  background-color:var(--darkpurple);
   height: 100%;
   width: 250px;
   position: fixed;
@@ -118,19 +122,19 @@ footer a {
 }
 
 .Link {
-  background-color: #d9d271;
+  background-color: var(--darkpurple);
   padding: 25px;
   font-size: 15pt;
   font-weight: bolder;
   transition: all 0.3s linear;
-  color: #03a60e;
-  border-bottom: 3px solid #c1d9b0;
+  color: var(--softyellow);
+  border-bottom: 2px solid var(--darkpurplefaded);
   opacity: 0;
 }
 
 .Link:hover {
-  background-color: #03a60e;
-  color: #c1d9b0;
+  background-color: var(--darkpurplefaded);
+  color: var(--darkpurple);
 }
 
 #check {
@@ -166,7 +170,7 @@ footer a {
 .hamburguer {
   position: relative;
   display: none;
-  background: #fff;
+  background: var(--darkpurple);
   width: 30px;
   height: 3px;
   top: 29px;
@@ -176,7 +180,7 @@ footer a {
 
 .hamburguer:before,
 .hamburguer:after {
-  background: #fff;
+  background: var(--darkpurple);
   content: "";
   display: block;
   width: 100%;

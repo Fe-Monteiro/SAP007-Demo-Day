@@ -1,3 +1,13 @@
+:root {
+  --darkpurple: #3C396D;
+  --darkpurplefaded: #a8a6dbb4;
+  --softyellow: #fffa98;
+  --bg: #deefe7;
+  --navbartext: #615c00;
+  --catalogue: #84C29B;
+  --navbartexthover: rgb(125, 45, 151);
+}
+
 * {
   margin: 0;
 }
@@ -21,10 +31,14 @@ body {
 }
 
 footer {
-  padding: 1%;
+  padding-bottom: 1%;
+  padding-top: 1%;
   text-align: center;
-  background-color: #f0e948;
+  color: var(--darkpurple);
+  background-color: var(--softyellow);
   font-weight: 600;
+  width: 100%;
+  height: auto;
 }
 
 footer a {
@@ -38,39 +52,41 @@ footer a {
 
 .navbar {
   list-style: none;
-  background-color: #0adcde;
+  background-color: var(--darkpurple);
   overflow: auto;
+  width: 100%;
+  border-bottom: 4px solid var(--softyellow);
 }
 
 .navbar a {
   float: left;
-  color: #8b3986;
+  color: var(--softyellow);
   text-decoration: none;
   font-weight: 600;
-  padding: 0.938em;
+  padding: 15px;
   text-align: center;
 }
 
 .navbar a:hover {
-  background-color: #dfa8dc;
+  background-color: var(--darkpurplefaded);
+  color: var(--navbar);
 }
 
 .active {
-  background-color: #f0e948;
-  color: #8b3986;
+  color: var(--darkpurple);
+  background-color: var(--softyellow);
 }
 
 .image-bg {
   width: 100%;
-  border-bottom: 0.313em solid #4e29;
-  border-top: 0.25em solid #f0e948;
+  border-bottom: 0.313em solid var(--softyellow);
 }
 
 .labelCatalogue {
   text-align: center;
   width: 100%;
   font-size: 1.7em;
-  background-color: #cf93dd;
+  background-color: var(--catalogue);
   margin-bottom: 0.7em;
   margin-top: 0.5em;
 }
@@ -85,7 +101,8 @@ footer a {
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 2em;
-  color: whitesmoke;
+  color: var(--darkpurple);
+  font-weight: bold;
   text-align: center;
 }
 
@@ -101,7 +118,7 @@ footer a {
   flex-direction: row;
   padding-top: 0.5em;
   font-size: 1em;
-  background-color: #f0e948;
+  background-color: var(--darkpurplefaded);
   margin-bottom: 1em;
   height: 3vh;
 }
@@ -116,8 +133,9 @@ footer a {
 .selectorButton {
   font-size: 1em;
   margin-left: 0.5em;
-  border: 0.125em solid #cf93dd;
+  border: 0.125em solid var(--darkpurplefaded);
   border-radius: 0.625em;
+  padding: 1%;
 }
 
 .image-card {
@@ -145,7 +163,7 @@ footer a {
   padding: 0.313em;
   margin: 0.313em 0.625em 1.25em 1.188em;
   background-color: white;
-  border-color: #9fe1e2;
+  border-color: var(--catalogue);
   border-style: groove;
   height: 18.75em;
   width: 12.5em;
@@ -156,7 +174,7 @@ footer a {
 .pesquisar {
   font-size: 1em;
   border-radius: 0.625em;
-  border: 0.125em solid #cf93dd;
+  border: 0.125em solid var(--darkpurple);
   margin-right: 0.625em;
   width: 90%;
   text-align: left;
@@ -172,8 +190,9 @@ footer a {
 }
 
 .button {
-  color: #cf93dd;
-  background-color: whitesmoke;
+  color: var(--darkpurple);
+  background-color: var(--softyellow);
+  color: var(--navbartext);
   border-radius: 0.625em;
   cursor: pointer;
   font-size: 1em;
@@ -193,7 +212,7 @@ footer a {
   right: 0.938em;
   width: 3.125em;
   height: 3.125em;
-  background-color: #87f583;
+  background-color: var(--catalogue);
   text-decoration: none;
   border-radius: 0.625em;
 }
@@ -211,7 +230,7 @@ footer a {
 }
 
 .barra {
-  background-color: #d9d271;
+  background-color:var(--darkpurple);
   height: 100%;
   width: 15.625em;
   position: fixed;
@@ -232,18 +251,18 @@ footer a {
 }
 
 .Link {
-  background-color: #d9d271;
+  background-color:var(--darkpurple);
   padding: 1.563em;
   font-size: 1.25em;
   font-weight: bolder;
   transition: all 0.3s linear;
-  color: #03a60e;
+  color: var(--softyellow);
   border-bottom: 0.188em solid #c1d9b0;
   opacity: 0;
 }
 
 .Link:hover {
-  background-color: #03a60e;
+  background-color: var(--softyellow);
   color: #c1d9b0;
 }
 
@@ -301,7 +320,7 @@ footer a {
 }
 
 .barra {
-  background-color: #d9d271;
+  background-color:var(--darkpurple);
   height: 100%;
   width: 15.625em;
   position: fixed;
@@ -321,18 +340,23 @@ footer a {
 }
 
 .Link {
-  background-color: #d9d271;
-  padding: 1.563em;
-  font-size: 1.25em;
+  background-color: var(--darkpurple);
+  padding: 25px;
+  font-size: 15pt;
   font-weight: bolder;
   transition: all 0.3s linear;
-  color: #03a60e;
-  border-bottom: 0.188em solid #c1d9b0;
+  color: var(--softyellow);
+  border-bottom: 2px solid var(--darkpurplefaded);
   opacity: 0;
 }
 
 .Link:hover {
-  background-color: #03a60e;
+  background-color: var(--darkpurplefaded);
+  color: var(--darkpurple);
+}
+
+.Link:selected {
+  background-color: var(--softyellow);
   color: #c1d9b0;
 }
 
@@ -460,7 +484,7 @@ input:checked~label .hamburguer:after {
 
   .hamburguer:before,
   .hamburguer:after, .hamburguer {
-    background: #fff;
+    background: var(--darkpurple);
   }
 
   footer {

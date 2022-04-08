@@ -169,7 +169,7 @@ footer a {
   border-radius: 50%;
   width: 60px;
   height: 60px;
-  position: fixed;
+  position: absolute;
   top: 25px;
   left: 25px;
 }
@@ -177,7 +177,7 @@ footer a {
 .hamburguer {
   position: relative;
   display: none;
-  background: #0e0e0e;
+  background: #fff;
   width: 30px;
   height: 3px;
   top: 29px;
@@ -187,8 +187,8 @@ footer a {
 
 .hamburguer:before,
 .hamburguer:after {
-  background: #131313;
-  content: '';
+  background: #fff;
+  content: "";
   display: block;
   width: 100%;
   height: 100%;
@@ -224,7 +224,7 @@ input:checked ~ label .hamburguer:after {
   padding-bottom: 2%;
 }
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media (max-width: 600px) {
   .row {
     -webkit-flex-direction: column;
     flex-direction: column;
@@ -240,6 +240,11 @@ input:checked ~ label .hamburguer:after {
 
   .active {
     background-color: #0adcde;
+  }
+
+  .image-bg {
+    height: 8em;
+    width: auto;
   }
 
   footer {
@@ -274,6 +279,7 @@ input:checked ~ label .hamburguer:after {
   }
 }
 
+/*
 @media screen and (max-width: 480px) {
   .curiosidades,
   .fontes {
@@ -301,4 +307,4 @@ input:checked ~ label .hamburguer:after {
     text-align: justify;
     font-size: 0.9rem;
   }
-}
+}*/

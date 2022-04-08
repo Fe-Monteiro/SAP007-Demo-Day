@@ -273,18 +273,16 @@ input:checked ~ label .hamburguer:after {
 }
 
 @media screen and (max-width: 480px) {
-  .navbar a {
-    float: none;
+  .navbar {
     display: none;
   }
 
-  .active {
-    background-color: #0adcde;
+  .banner {
+    height: auto;
+    padding-top: 15%;
+    padding-bottom: 8%;
   }
 
-  footer {
-    font-size: 0.8em;
-  }
   .texto {
     width: 95%;
     font-size: 12px;
@@ -304,17 +302,5 @@ input:checked ~ label .hamburguer:after {
     margin-bottom: 90px;
     justify-content: center;
     align-items: center;
-  }
-  .texto {
-    background: #f09e5280;
-    width: 100%;
-    padding: 10px;
-    border-radius: 15px;
-    font-size: 20px;
-    text-align: left;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    margin-top: 0;
   }
 }

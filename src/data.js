@@ -2,13 +2,19 @@ export const filterStatus = (data, value) => {
   return data.filter((item) => {
     return item.status === value
   })
-  }
+}
 
 export const filterSpecie = (data, value) => {
   return data.filter((item) => {
     return item.species === value
   })
-  }
+}
+
+export const filterGender = (data, value) => {
+  return data.filter((item) => {
+    return item.gender === value
+  })
+}
 
 export const ordination = (characters, order) => {
   const listCharacters = [...characters]

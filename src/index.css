@@ -1,3 +1,12 @@
+:root {
+  --darkpurple: #3C396D;
+  --darkpurplefaded: #a8a6dbb4;
+  --softyellow: #fffa98;
+  --bg: #deefe7;
+  --navbartext: #f0e948;
+  --navbartexthover: rgb(125, 45, 151);
+}
+
 * {
   margin: 0;
 }
@@ -13,16 +22,22 @@ a:active {
 
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #deefe7;
+  background-color: var(--bg);
 }
+
+section {
+  margin-top: -13%;
+  margin-bottom: 1%;
+}
+
 footer {
-  padding: 1%;
+  padding-bottom: 1%;
+  padding-top: 1%;
   text-align: center;
-  background-color: #f0e948;
+  background-color: var(--navbartext);
   font-weight: 600;
   width: 100%;
-  padding-bottom: 3vw;
-  height: 100%;
+  height: auto;
 }
 
 .border {
@@ -36,14 +51,15 @@ footer {
 
 .navbar {
   list-style: none;
-  background-color: #0adcde;
+  background-color: var(--darkpurple);
   overflow: auto;
   width: 100%;
+  border-bottom: 4px solid var(--softyellow);
 }
 
 .navbar a {
   float: left;
-  color: #8b3986;
+  color: var(--softyellow);
   text-decoration: none;
   font-weight: 600;
   padding: 15px;
@@ -51,41 +67,23 @@ footer {
 }
 
 .navbar a:hover {
-  background-color: #dfa8dc;
+  background-color: var(--darkpurplefaded);
+  color: var(--navbar);
 }
 
 .active {
-  background-color: #f0e948;
-  color: #8b3986;
+  color: var(--darkpurple);
+  background-color: var(--softyellow);
 }
 
-.banner {
-  background-image: url("./img/back.jpg");
-  background-size: cover;
-  background-position: bottom right;
-  height: 50vh;
-  width: 90%;
-  border-bottom: 5px solid #4e29;
-  border-top: 4px solid #f0e948;
-  padding: 2% 5%;
-}
-
-.texto {
-  background: #f09e5280;
-  width: 100%;
-  padding: 10px;
-  border-radius: 15px;
-  font-size: 20px;
-  text-align: left;
-  align-items: center;
+.banner-ram {
   display: flex;
-  flex-direction: column;
+  width: auto;
 }
 
 .row {
   padding: 0% 4%;
   text-align: center;
-  margin-bottom: 90px;
   justify-content: center;
   align-items: center;
 }
@@ -143,7 +141,6 @@ footer {
 .hamburguer {
   position: relative;
   display: none;
-  background: #101010;
   width: 30px;
   height: 3px;
   top: 29px;
@@ -153,7 +150,7 @@ footer {
 
 .hamburguer:before,
 .hamburguer:after {
-  background: #0a0a0a;
+  background: var(--navbar);
   content: "";
   display: block;
   width: 100%;
@@ -231,6 +228,11 @@ input:checked ~ label .hamburguer:after {
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .hamburguer {
     display: block;
+    color: var(--darkpurple);
+  }
+
+  .navbar {
+    display: none;
   }
 
   .active {
@@ -239,6 +241,7 @@ input:checked ~ label .hamburguer:after {
 
   footer {
     font-size: 0.8em;
+    color: var(--softyellow);
   }
 
   .curiosidades,
@@ -261,7 +264,7 @@ input:checked ~ label .hamburguer:after {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-    color: #ffffff;
+    color: var(--darkpurple);
     text-align: justify;
     font-size: 0.9rem;
   }
@@ -273,14 +276,14 @@ input:checked ~ label .hamburguer:after {
 }
 
 @media screen and (max-width: 480px) {
-  .navbar {
+  .navbar,
+  .navbar a {
     display: none;
   }
 
-  .banner {
-    height: auto;
-    padding-top: 15%;
-    padding-bottom: 8%;
+  .banner-ram {
+    display: flex;
+    width: auto;
   }
 
   .texto {
@@ -295,12 +298,17 @@ input:checked ~ label .hamburguer:after {
 }
 
 @media screen and (min-width: 1300px) {
+  .banner-ram {
+    display: flex;
+    width: auto;
+  }
+
   .row {
     display: flex;
     padding: 0% 4%;
     text-align: center;
-    margin-bottom: 90px;
     justify-content: center;
     align-items: center;
+    color: var(--navbar);
   }
 }

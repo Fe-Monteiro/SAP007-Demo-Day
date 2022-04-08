@@ -1,5 +1,5 @@
 import data from "./data/rickandmorty/rickandmorty.js";
-import { filterStatus, filterSpecie, ordination, average, searchName } from './data.js';
+import { filterStatus, filterSpecie, ordination, average, searchName, filterGender } from './data.js';
 
 const allData = data.results
 const printingAllCards = (characters) => {
@@ -28,9 +28,15 @@ speciesFilter.addEventListener("change", (event) => {
       return item.status === statusFilter.value
     })
   }
+  if (genderFilter.value) {
+      speciesCards = speciesCards.filter((item) =>{
+        return item.gender === genderFilter.value
+      })
+    }
   document.getElementById("averageCalculation").innerHTML = `Essa categoria representa ${average(allData.length, speciesCards.length)}% de todos os personagens`
   printingAllCards(speciesCards);
 })
+
 
 const statusFilter = document.getElementById("status");
 statusFilter.addEventListener("change", (event) => {
@@ -41,13 +47,30 @@ statusFilter.addEventListener("change", (event) => {
       return item.species === speciesFilter.value
     })
   }
+  if (genderFilter.value) {
+      statusCards = statusCards.filter((item) =>{
+        return item.gender === genderFilter.value
+      })
+  }
   document.getElementById("averageCalculation").innerHTML = `Essa categoria representa ${average(allData.length, statusCards.length)}% de todos os personagens`
   printingAllCards(statusCards);
 })
 
 const genderFilter = document.getElementById("gender");
-genderFilter.addEventListener("change", function (event) {
-  const genderCards = filter(allData, event.target.value);
+genderFilter.addEventListener("change", (event) => {
+  let genderCards = filterGender(allData, event.target.value);
+
+  if (speciesFilter.value) {
+    genderCards = genderCards.filter((item) =>{
+      return item.species === speciesFilter.value
+    })
+  }
+    if (statusFilter.value) {
+      genderCards = genderCards.filter((item) =>{
+        return item.status === statusFilter.value
+      })
+
+}
   document.getElementById("averageCalculation").innerHTML = `Essa categoria representa ${average(allData.length, genderCards.length)}% de todos os personagens`
   printingAllCards(genderCards);
 })

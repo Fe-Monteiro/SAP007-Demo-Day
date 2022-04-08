@@ -12,7 +12,7 @@ a:active {
 }
 
 body {
-  background-image: url(img/videos.png);
+  background: url(img/videos.png) #461e6a;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
@@ -31,7 +31,6 @@ body {
 }
 
 .net, .hbo {
-  font-size: 1.7em;
   color: whitesmoke;
   text-align: center;
   margin-left: 30%;
@@ -90,13 +89,7 @@ footer a {
   margin-left: 55%;
   margin-bottom: 0;
 }
-/*
-.toWatch {
-  background-position: 0%;
-  margin-top: ;
-  margin-left: 10%;
-  padding: 0;
-} */
+
 .barra {
   background-color: #d9d271;
   height: 100%;
@@ -215,7 +208,6 @@ input:checked ~ label .hamburguer:after {
 
   body {
     width: 100%;
-    background: url(img/videos.png) #461e6a;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 25% 10%;

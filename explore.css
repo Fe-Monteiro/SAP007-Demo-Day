@@ -1,0 +1,521 @@
+ :root {
+  --color-error: red;
+  --font-color-button: white;
+  --gray-default: gray;
+  --purple-border-body: #6a2b7b;
+  --purple-gradient: rgb(103, 41, 125);
+  --purple-hover: rgb(102, 32, 126);
+  --yellow-border-body: #fbc41c;
+  --yellow-gradient: #fac31c;
+  --yellow-hover: rgb(212, 166, 28);
+  --yellow-font: #ecb200;
+}
+
+* {
+  margin: 0;
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  outline: none;
+}
+
+body {
+  font-size: 1em;
+  background-image: url(img/wallpaper.png);
+  background-repeat: repeat;
+  height: 100%;
+  width: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer {
+  padding: 1%;
+  text-align: center;
+  background-color: #f0e948;
+  font-weight: 600;
+}
+
+footer a {
+  text-decoration-line: none;
+}
+
+.border {
+  padding: 0% 5%;
+  list-style: none;
+}
+
+.navbar {
+  list-style: none;
+  background-color: #0adcde;
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  color: #8b3986;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.938em;
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: #dfa8dc;
+}
+
+.active {
+  background-color: #f0e948;
+  color: #8b3986;
+}
+
+.image-bg {
+  width: 100%;
+  border-bottom: 0.313em solid #4e29;
+  border-top: 0.25em solid #f0e948;
+}
+
+.labelCatalogue {
+  text-align: center;
+  width: 100%;
+  font-size: 1.7em;
+  background-color: #cf93dd;
+  margin-bottom: 0.7em;
+  margin-top: 0.5em;
+}
+
+.box {
+  position: relative;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2em;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.image-bg {
+  width: 100%;
+  height: auto;
+}
+
+#container {
+  display: flex;
+  padding: 1.25em;
+  justify-content: space-around;
+  flex-direction: row;
+  padding-top: 0.5em;
+  font-size: 1em;
+  background-color: #f0e948;
+  margin-bottom: 1em;
+  height: 3vh;
+}
+
+.filterName {
+  text-align: center;
+  font-style: italic;
+  font-size: 1.2em;
+  display: inline;
+}
+
+.selectorButton {
+  font-size: 1em;
+  margin-left: 0.5em;
+  border: 0.125em solid #cf93dd;
+  border-radius: 0.625em;
+}
+
+.image-card {
+  width: 12.5em;
+  height: 12.5em;
+}
+
+.p-card {
+  font-size: 0.7em;
+}
+
+.p-name-card {
+  font-size: 0.9em;
+  padding-bottom: 0.188em;
+  font-weight: 600;
+}
+
+.card-board {
+  width: 90vw;
+  margin: auto;
+}
+
+.cards {
+  display: inline-table;
+  padding: 0.313em;
+  margin: 0.313em 0.625em 1.25em 1.188em;
+  background-color: white;
+  border-color: #9fe1e2;
+  border-style: groove;
+  height: 18.75em;
+  width: 12.5em;
+  border-radius: 0.313em;
+  box-shadow: 0 0 0.625em rgba(0, 0, 0, 0.2);
+}
+
+.pesquisar {
+  font-size: 1em;
+  border-radius: 0.625em;
+  border: 0.125em solid #cf93dd;
+  margin-right: 0.625em;
+  width: 90%;
+  text-align: left;
+  padding-left: 3%;
+  margin-bottom: 0.3em;
+}
+
+.buscar-e-limpar {
+  justify-content: center;
+  display: flex;
+  width: 140%;
+  flex-direction: column;
+}
+
+.button {
+  color: #cf93dd;
+  background-color: whitesmoke;
+  border-radius: 0.625em;
+  cursor: pointer;
+  font-size: 1em;
+  border: 0.125em solid;
+  position: relative;
+  width: 6%;
+  padding-bottom: 1.188em;
+}
+
+/*Botão top*/
+.fixed-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0.625em;
+  right: 0.938em;
+  width: 3.125em;
+  height: 3.125em;
+  background-color: #87f583;
+  text-decoration: none;
+  border-radius: 0.625em;
+}
+
+.fixed-button::after {
+  content: "↑";
+  font-size: 2em;
+  font-weight: bold;
+  color: aliceblue;
+  transition: 250ms;
+}
+
+.fixed-button:hover::after {
+  margin-top: -0.5em;
+}
+
+.barra {
+  background-color: #d9d271;
+  height: 100%;
+  width: 15.625em;
+  position: fixed;
+  transition: all 0.2s linear;
+  left: -15.625em;
+  z-index: 1;
+}
+
+.menu-text {
+  width: 100%;
+  position: absolute;
+  top: 5em;
+  padding-top: 0.938em;
+}
+
+.menu-text a {
+  text-decoration: none;
+}
+
+.Link {
+  background-color: #d9d271;
+  padding: 1.563em;
+  font-size: 1.25em;
+  font-weight: bolder;
+  transition: all 0.3s linear;
+  color: #03a60e;
+  border-bottom: 0.188em solid #c1d9b0;
+  opacity: 0;
+}
+
+.Link:hover {
+  background-color: #03a60e;
+  color: #c1d9b0;
+}
+
+#check {
+  display: none;
+}
+
+#icone {
+  cursor: pointer;
+  padding: 2em;
+  position: absolute;
+  z-index: 1;
+  top: 1.25em;
+  left: 1.25em;
+}
+
+#check:checked~.barra {
+  transform: translateX(15.625em);
+}
+
+#check:checked~.barra nav a .Link {
+  opacity: 1;
+  transition-delay: 0.3s;
+}
+
+.mburg {
+  border-radius: 50%;
+  width: 3.75em;
+  height: 3.75em;
+  position: fixed;
+  top: 1.563em;
+  left: 1.563em;
+}
+
+.hamburguer {
+  position: relative;
+  display: block;
+  background: #101010;
+  width: 1.875em;
+  height: 0.188em;
+  top: 1.813em;
+  left: 0.938em;
+  transition: 0.5s ease-in-out;
+}
+
+.hamburguer:before,
+.hamburguer:after {
+  background: #0a0a0a;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: 0.5s ease-in-out;
+}
+
+.barra {
+  background-color: #d9d271;
+  height: 100%;
+  width: 15.625em;
+  position: fixed;
+  transition: all 0.2s linear;
+  left: -15.625em;
+}
+
+.menu-text {
+  width: 100%;
+  position: absolute;
+  top: 5em;
+  padding-top: 0.938em;
+}
+
+.menu-text a {
+  text-decoration: none;
+}
+
+.Link {
+  background-color: #d9d271;
+  padding: 1.563em;
+  font-size: 1.25em;
+  font-weight: bolder;
+  transition: all 0.3s linear;
+  color: #03a60e;
+  border-bottom: 0.188em solid #c1d9b0;
+  opacity: 0;
+}
+
+.Link:hover {
+  background-color: #03a60e;
+  color: #c1d9b0;
+}
+
+#check {
+  display: none;
+}
+
+#icone {
+  cursor: pointer;
+  padding: 2em;
+  position: absolute;
+  z-index: 1;
+  top: 1.25em;
+  left: 1.25em;
+}
+
+#check:checked~.barra {
+  transform: translateX(15.625em);
+}
+
+#check:checked~.barra nav a .Link {
+  opacity: 1;
+  transition-delay: 0.3s;
+}
+
+.mburg {
+  border-radius: 50%;
+  width: 3.75em;
+  height: 3.75em;
+  position: fixed;
+  top: 1.563em;
+  left: 1.563em;
+}
+
+.hamburguer {
+  position: relative;
+  display: none;
+  background: #101010;
+  width: 1.875em;
+  height: 0.188em;
+  top: 1.813em;
+  left: 0.938em;
+  transition: 0.5s ease-in-out;
+}
+
+.hamburguer:before,
+.hamburguer:after {
+  background: #0a0a0a;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: 0.5s ease-in-out;
+}
+
+.hamburguer:before {
+  top: -0.625em;
+}
+
+.hamburguer:after {
+  bottom: -0.625em;
+}
+
+input:checked~label .hamburguer {
+  transform: rotate(45deg);
+}
+
+input:checked~label .hamburguer:before {
+  transform: rotate(90deg);
+  top: 0;
+}
+
+input:checked~label .hamburguer:after {
+  transform: rotate(90deg);
+  bottom: 0;
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+
+  .row {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .navbar a {
+    float: none;
+    display: none;
+  }
+
+  .active {
+    background-color: #0adcde;
+  }
+
+  .center {
+    font-size: 0.8em;
+    transform: translate(-50%, -50%);
+  }
+
+  .labelCatalogue {
+    font-size: 1em;
+  }
+
+  .buscar-e-limpar {
+    width: 100%;
+    align-items: center;
+  }
+
+  .buscar-e-limpar input {
+    height: 1.8em;
+    margin-right: 0;
+    margin-bottom: 1em;
+  }
+
+  #clearFiltros {
+    width: 50%;
+    height: auto;
+    padding: 2% 0;
+    margin: 5% auto 2%;
+  }
+
+  .hamburguer {
+    display: block;
+  }
+
+  .hamburguer:before,
+  .hamburguer:after, .hamburguer {
+    background: #fff;
+  }
+
+  footer {
+    font-size: 0.6em;
+  }
+
+  #container {
+    flex-direction: column;
+    height: auto;
+    padding-top: 1.8em;
+  }
+
+  #container select {
+    height: 1.8em;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 1%;
+  }
+
+  #cardsBoard {
+    text-align: center;
+  }
+
+  #container {
+    text-align: center;
+  }
+
+  .mburg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  #icone {
+    z-index: 2;
+  }
+
+  .fixed-button{
+    bottom: 14px;
+    right: 3px;
+    width: 33px;
+    height: 31px;
+  }
+}

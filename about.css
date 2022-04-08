@@ -1,0 +1,310 @@
+* {
+  margin: 0;
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  outline: none;
+}
+
+body {
+  font-size: 1em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url(img/wallpaper.png);
+  background-repeat: repeat;
+}
+
+footer {
+  padding: 1%;
+  text-align: center;
+  background-color: #f0e948;
+  font-weight: 600;
+}
+
+footer a {
+  text-decoration-line: none;
+}
+
+.border {
+  padding: 0% 5%;
+  list-style: none;
+}
+
+.center {
+  text-align: center;
+}
+
+.navbar {
+  list-style: none;
+  background-color: #0adcde;
+  overflow: auto;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  color: #8b3986;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 15px;
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: #dfa8dc;
+}
+
+.active {
+  background-color: #f0e948;
+  color: #8b3986;
+}
+
+.image-bg {
+  width: 100%;
+  border-bottom: 5px solid #4e29;
+  border-top: 4px solid #f0e948;
+}
+
+.title {
+  font-size: 1.5em;
+  margin-bottom: 1%;
+  font-style: oblique;
+  font-style: italic;
+  text-align: center;
+  margin-top: 3%;
+}
+
+.text {
+  font-size: 1.1em;
+  text-align: justify;
+}
+
+.curiosidades,
+.fontes {
+  display: flex;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 4%;
+  padding: 2%;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+}
+
+.curiosidades,
+.fontes a:visited {
+  color: #ffffff;
+}
+
+.texto-curiosidades,
+.fontes p {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  color: #ffffff;
+  text-align: justify;
+}
+.barra {
+  background-color: #d9d271;
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  transition: all 0.2s linear;
+  left: -250px;
+}
+
+.menu-text {
+  width: 100%;
+  position: absolute;
+  top: 80px;
+  padding-top: 15px;
+}
+
+.menu-text a {
+  text-decoration: none;
+}
+
+.Link {
+  background-color: #d9d271;
+  padding: 25px;
+  font-size: 15pt;
+  font-weight: bolder;
+  transition: all 0.3s linear;
+  color: #03a60e;
+  border-bottom: 3px solid #c1d9b0;
+  opacity: 0;
+}
+
+.Link:hover {
+  background-color: #03a60e;
+  color: #c1d9b0;
+}
+
+#check {
+  display: none;
+}
+#icone {
+  cursor: pointer;
+  padding: 32px;
+  position: absolute;
+  z-index: 1;
+  top: 20px;
+  left: 20px;
+}
+
+#check:checked ~ .barra {
+  transform: translateX(250px);
+}
+
+#check:checked ~ .barra nav a .Link {
+  opacity: 1;
+  transition-delay: 0.3s;
+}
+
+.mburg {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 25px;
+  left: 25px;
+}
+
+.hamburguer {
+  position: relative;
+  display: none;
+  background: #fff;
+  width: 30px;
+  height: 3px;
+  top: 29px;
+  left: 15px;
+  transition: 0.5s ease-in-out;
+}
+
+.hamburguer:before,
+.hamburguer:after {
+  background: #fff;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: 0.5s ease-in-out;
+}
+
+.hamburguer:before {
+  top: -10px;
+}
+
+.hamburguer:after {
+  bottom: -10px;
+}
+
+input:checked ~ label .hamburguer {
+  transform: rotate(45deg);
+}
+
+input:checked ~ label .hamburguer:before {
+  transform: rotate(90deg);
+  top: 0;
+}
+
+input:checked ~ label .hamburguer:after {
+  transform: rotate(90deg);
+  bottom: 0;
+}
+
+.imagens-curiosidades {
+  width: 100%;
+  height: auto;
+  padding-bottom: 2%;
+}
+
+@media (max-width: 600px) {
+  .row {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .navbar a {
+    float: none;
+    display: none;
+  }
+  .hamburguer {
+    display: block;
+  }
+
+  .active {
+    background-color: #0adcde;
+  }
+
+  .image-bg {
+    height: 8em;
+    width: auto;
+  }
+
+  footer {
+    font-size: 0.8em;
+  }
+
+  .curiosidades,
+  .fontes {
+    display: flex;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4%;
+    padding: 2%;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+  }
+  .imagens-curiosidades {
+    width: 100%;
+    height: auto;
+    padding-bottom: 2%;
+  }
+  .texto-curiosidades,
+  .fontes p,
+  a {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    color: #ffffff;
+    text-align: justify;
+    font-size: 0.9rem;
+  }
+}
+
+/*
+@media screen and (max-width: 480px) {
+  .curiosidades,
+  .fontes {
+    display: flex;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4%;
+    padding: 2%;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+  }
+  .imagens-curiosidades {
+    width: 100%;
+    height: auto;
+    padding-bottom: 2%;
+  }
+  .texto-curiosidades,
+  .fontes p,
+  a {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    color: #ffffff;
+    text-align: justify;
+    font-size: 0.9rem;
+  }
+}*/

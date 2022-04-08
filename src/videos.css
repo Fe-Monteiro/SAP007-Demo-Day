@@ -21,7 +21,7 @@ a:active {
 }
 
 body {
-  background-image: url(img/videos.png);
+  background: url(img/videos.png) #461e6a;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
@@ -219,7 +219,6 @@ input:checked ~ label .hamburguer:after {
 
   body {
     width: 100%;
-    background: url(img/videos.png) #461e6a;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 25% 10%;

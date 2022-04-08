@@ -116,7 +116,6 @@ footer a {
   padding: 1.25em;
   justify-content: space-around;
   flex-direction: row;
-  padding-top: 0.5em;
   font-size: 1em;
   background-color: var(--darkpurplefaded);
   margin-bottom: 1em;
@@ -165,7 +164,7 @@ footer a {
   background-color: white;
   border-color: var(--catalogue);
   border-style: groove;
-  height: 18.75em;
+  height: 21.75em;
   width: 12.5em;
   border-radius: 0.313em;
   box-shadow: 0 0 0.625em rgba(0, 0, 0, 0.2);
@@ -435,7 +434,7 @@ input:checked~label .hamburguer:after {
   bottom: 0;
 }
 
-@media (min-width: 300px) and (max-width: 600px) {
+@media (min-width: 300px) and (max-width: 955px) {
 
   .row {
     -webkit-flex-direction: column;
@@ -529,4 +528,9 @@ input:checked~label .hamburguer:after {
     width: 33px;
     height: 31px;
   }
+}
+@media (min-width: 600px) and (max-width: 1190px){
+  .pesquisar{
+    width: 80%;
+  } 
 }

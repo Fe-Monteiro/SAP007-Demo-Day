@@ -1,8 +1,8 @@
 # Data Lovers - Rick and Morty
+
 <div align="center">
 <img src= "https://user-images.githubusercontent.com/97405991/158296024-450a33ac-5d83-4de2-bb62-d013bcd1d9be.jpg" width=400>
 </div>
-
 
 ## Índice
 
@@ -21,8 +21,6 @@ Apesar de genial, Rick sofre de alcoolismo e possui uma relação conflituosa co
 
 Entre momentos hilários e reflexões interessantes sobre a vida, Rick & Morty arranca gargalhadas e ainda rende ótimas discussões filosóficas.
 
-
-
 ## 2. Resumo do projeto
 
 O objetivo deste projeto foi construir uma interface Web divertida que possibilitasse aos fãns jogar, assistir e visualizar os dados mais relevantes de seus personagens prediletos da série.
@@ -38,17 +36,19 @@ O projeto todo foi desenvolvido utilizando apenas vanilla JavaScript, HTML5 e CS
 O layout da aplicação foi pensado deste o inicio para ser bem divertido e colorido e a paleta de cores utilizada foi baseada nas cores utilizadas na própria série.
 
 Paletas de cores:
+
 <div align="center">
 <img src="https://user-images.githubusercontent.com/97405991/157973254-dd72c90d-edfc-4619-85bd-aa2d74661200.jpeg" width=600>
 </div>
 
-Desenvolvemos uma plataforma de fácil a navegação e bastante intuitiva para ser acessível a todo tipo de público, além de  trazer uma resposta rápida na busca por informações.
+Desenvolvemos uma plataforma de fácil a navegação e bastante intuitiva para ser acessível a todo tipo de público, além de trazer uma resposta rápida na busca por informações.
 
 <div align="center">
 <img src="https://user-images.githubusercontent.com/97405991/158296782-54b2d4ee-d993-4f6d-ab93-d245525b1d86.png" width=500>
 </div>
 
 A Princípio a ideia era trabalhamos apenas com 2 telas, porem conforme fomos desenvolvendo percebemos que estaríamos lidando com muitos dados e sentimos a necessidade de criar uma página exclusiva para a exibição dos Cards e cálculos agregados.
+
 <div align="center">
 <img src="https://user-images.githubusercontent.com/97405991/158302922-16bf2e6d-ec5c-4dc1-97b1-7e9e858c6d8a.jpg" width=500>
 </div>
@@ -65,10 +65,6 @@ Além disso o projeto possui um design responsivo possibilitando a experiência 
     <p></p></a>
     <img style="max-width:400px;" src="https://cdn.loom.com/sessions/thumbnails/79c8d452bce044b4a572079d094ad84e-with-play.gif">
 
-
-
-
-
 A interface permite ao usuário:
 
 - Visualizar cards que possuem dados de todos os personagens da série.
@@ -80,6 +76,5 @@ A interface permite ao usuário:
 
 ## 4. Autoras
 
-
-| [<img src="https://avatars.githubusercontent.com/u/97405991?v=4" width=115><br><sub>Tatiane Mendonça</sub>](https://github.com/Tati-Mendonca) |  [<img src="https://avatars.githubusercontent.com/u/97461151?v=4" width=115><br><sub>Viviane Soares</sub>](https://github.com/vivisoares) |   |
-| :---: | :---: | :---:
+| [<img src="https://avatars.githubusercontent.com/u/97251498?v=4" width=115><br><sub>Fernanda Monteiro</sub>](https://www.linkedin.com/in/fe-monteiro/) | [<img src="https://avatars.githubusercontent.com/u/34221101?v=4" width=115><br><sub>Larissa Moreira</sub>](https://www.linkedin.com/in/la4ri/) |     |
+| :----------------------------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------------: | :-: |

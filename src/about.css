@@ -153,6 +153,7 @@ footer a {
   z-index: 1;
   top: 20px;
   left: 20px;
+  display: none;
 }
 
 #check:checked ~ .barra {
@@ -176,7 +177,7 @@ footer a {
 .hamburguer {
   position: relative;
   display: none;
-  background: #fff;
+  background:#03a60e;
   width: 30px;
   height: 3px;
   top: 29px;
@@ -186,7 +187,7 @@ footer a {
 
 .hamburguer:before,
 .hamburguer:after {
-  background: #fff;
+  background: #03a60e;
   content: "";
   display: block;
   width: 100%;
@@ -275,6 +276,12 @@ input:checked ~ label .hamburguer:after {
     text-align: justify;
     font-size: 0.9rem;
   }
+
+  #icone {
+   display: block;
+
+  }
+
 }
 
 /*

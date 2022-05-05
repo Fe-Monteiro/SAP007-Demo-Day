@@ -92,7 +92,7 @@ footer a {
 }
 
 .barra {
-  background-color: #d9d271;
+  background-color: #F2C335;
   height: 100%;
   width: 250px;
   position: fixed;
@@ -117,7 +117,7 @@ footer a {
   font-size: 15pt;
   font-weight: bolder;
   transition: all 0.3s linear;
-  color: #03a60e;
+  color: #4B2273;
   border-bottom: 3px solid #c1d9b0;
   opacity: 0;
 }
@@ -137,6 +137,7 @@ footer a {
   z-index: 1;
   top: 20px;
   left: 20px;
+  display: none;
 }
 
 #check:checked ~ .barra {
@@ -160,7 +161,7 @@ footer a {
 .hamburguer {
   position: relative;
   display: none;
-  background: #fff;
+  background: #d9d271;
   width: 30px;
   height: 3px;
   top: 29px;
@@ -170,7 +171,7 @@ footer a {
 
 .hamburguer:before,
 .hamburguer:after {
-  background: #fff;
+  background: #d9d271;
   content: "";
   display: block;
   width: 100%;
@@ -239,6 +240,10 @@ input:checked ~ label .hamburguer:after {
 
   .image {
     width: 20%;
+  }
+
+  #icone{
+    display:block;
   }
 }
 

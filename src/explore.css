@@ -259,6 +259,7 @@ footer a {
   z-index: 1;
   top: 1.25em;
   left: 1.25em;
+  display: none;
 }
 
 #check:checked~.barra {
@@ -301,14 +302,6 @@ footer a {
   transition: 0.5s ease-in-out;
 }
 
-.barra {
-  background-color: #d9d271;
-  height: 100%;
-  width: 15.625em;
-  position: fixed;
-  transition: all 0.2s linear;
-  left: -15.625em;
-}
 
 .menu-text {
   width: 100%;
@@ -359,36 +352,6 @@ footer a {
   transition-delay: 0.3s;
 }
 
-.mburg {
-  border-radius: 50%;
-  width: 3.75em;
-  height: 3.75em;
-  position: fixed;
-  top: 1.563em;
-  left: 1.563em;
-}
-
-.hamburguer {
-  position: relative;
-  display: none;
-  background: #101010;
-  width: 1.875em;
-  height: 0.188em;
-  top: 1.813em;
-  left: 0.938em;
-  transition: 0.5s ease-in-out;
-}
-
-.hamburguer:before,
-.hamburguer:after {
-  background: #0a0a0a;
-  content: "";
-  display: block;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  transition: 0.5s ease-in-out;
-}
 
 .hamburguer:before {
   top: -0.625em;
@@ -462,6 +425,7 @@ input:checked~label .hamburguer:after {
   .hamburguer:before,
   .hamburguer:after, .hamburguer {
     background: #fff;
+    display: block;
   }
 
   footer {
@@ -498,6 +462,7 @@ input:checked~label .hamburguer:after {
 
   #icone {
     z-index: 2;
+    display:block ;
   }
 
   .fixed-button{

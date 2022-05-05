@@ -30,7 +30,8 @@ body {
   width: 100%;
 }
 
-.net, .hbo {
+.net,
+.hbo {
   color: whitesmoke;
   text-align: center;
   margin-left: 30%;
@@ -234,10 +235,10 @@ input:checked ~ label .hamburguer:after {
   h1 {
     font-size: 1em;
     margin-left: 40%;
-    width: 50%;
   }
 
   .image {
     width: 20%;
   }
 }
+

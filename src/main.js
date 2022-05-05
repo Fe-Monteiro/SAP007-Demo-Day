@@ -88,3 +88,16 @@ function searchCharacterNames(e) {
 }
 searchCharacterName.addEventListener("keyup", searchCharacterNames);
 
+const selectButtonClearFilters = document.getElementById("clearFiltros");
+selectButtonClearFilters.addEventListener("click", clearFilters);
+
+function clearFilters(event) {
+  event.preventDefault();
+  printingAllCards(allData);
+  speciesFilter.options[(speciesFilter.selectedIndex = 0)];
+  statusFilter.options[(statusFilter.selectedIndex = 0)];
+  genderFilter.options[(genderFilter.selectedIndex = 0)];
+  ordinationAz.options[(ordinationAz.selectedIndex = 0)];
+  searchCharacterName.value = "";
+  selectButtonClearFilters.innerHTML = "";
+}

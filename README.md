@@ -1,80 +1,154 @@
-# Data Lovers - Rick and Morty
-
+# Rick and Morty Lovers
 <div align="center">
-<img src= "https://user-images.githubusercontent.com/97405991/158296024-450a33ac-5d83-4de2-bb62-d013bcd1d9be.jpg" width=400>
+<img src="readme.img/capa.jpg" width=400>
 </div>
+
 
 ## Índice
 
-- [1. Prefácio](#1-prefácio)
-- [2. Sobre o tema](#2-sobre-o-tema)
-- [3. Interface do usuário](#3-interface-do-usuário)
-- [4. Autoras](#4-Autoras)
+- [1. Resumo do Projeto](#1-resumo-do-projeto)
+- [2. Definição do Projeto](#2-definição-do-projeto)
+- [3. Interface anterior do projeto](#3-interface-anterior-do-projeto)
+- [4. Interface atual do projeto](#4-interface-atual-do-projeto)
+- [5. Histórias de usuários](#6-histórias-de-usuários)
+- [6. Testes de Usabilidade](#7-testes-de-usabilidade)
+- [7. Tecnologias Utilizadas](#8-tecnologias-utilizadas)
+- [8. Considerações](#9-considerações)
 
 ---
 
-## 1. Sobre o tema
+## Sobre Rick and Morty
 
-Rick and Morty é uma animação que mostra as aventuras interdimensionais de Rick, a mente mais brilhante da galáxia, com sua arma capaz de criar portais para viajar no tempo-espaço, Rick leva seu neto Morty, para explorar todas as absurdas formas de vida que o universo é capaz de sustentar.
+[Rick and Morty](https://pt.wikipedia.org/wiki/Rick_and_Morty) é uma série de animação adulta norte-americana de comédia e ficção científica criada por Justin Roiland e Dan Harmon para o bloco de programação noturno Adult Swim, exibido no canal Cartoon Network.
 
-Apesar de genial, Rick sofre de alcoolismo e possui uma relação conflituosa com sua família, fruto da sua visão cínica da vida e seu egoísmo. Por outro lado, Morty está longe de ter o intelecto do seu avô, mas é o único capaz de fazê-lo ser um pouquinho mais gentil e amoroso.
+É uma das animações mais insanas e viciantes produzidas até hoje. Criado inicialmente como uma paródia animada do filme [_De Volta para o Futuro_](https://pt.wikipedia.org/wiki/Back_to_the_Future), as aventuras do cientista louco, excêntrico e alcoólatra Rick e seu neto Morty que é facílmente influenciável por ele, conquistou diversos fãs ao redor do mundo.
 
-Entre momentos hilários e reflexões interessantes sobre a vida, Rick & Morty arranca gargalhadas e ainda rende ótimas discussões filosóficas.
+Rick é um cientista alcoólatra de 70 anos extremamente inteligente que foi morar com a família de sua filha Beth, uma cirurgiã cardíaca de equinos. Ele está sempre em busca de grandes experiências e divide seu tempo entre desenvolver projetos altamente tecnológicos em seu laboratório (garagem da casa da Beth), e em levar seu neto de 14 anos Morty em aventuras perigosas e surreais, indo parar até em diversas dimensões e realidades paralelas. Ele é bem esquentado e sempre sobra para seu neto, Morty, que o acompanha nessas expedições. Combinados com tensões preexistentes dentro da família, esses eventos causam ao sensível Morty muita angústia em casa e na escola.
 
-## 2. Resumo do projeto
+## 1. Resumo do projeto.
 
-O objetivo deste projeto foi construir uma interface Web divertida que possibilitasse aos fãns jogar, assistir e visualizar os dados mais relevantes de seus personagens prediletos da série.
+**_Rick and Morty Lovers_** foi um novo desafio lançado no Bootcamp do <Laboratória>, onde nos reunimos em squads e tínhamos como desafio escolhermos um determinado projeto de alguma das integrantes e implementarmos melhorias, buscamos então, um projeto que já gostávamos e implementamos várias outras funcionalidades legais que continham nos outros projetos das outras colegas do squad, visando juntar em um só site, o melhor conteúdo para entretenimento do nosso público.
 
-Através da plataforma é possÍvel filtrar, ordenar e realizar cálculos agregados com os dados disponibilizados e assim tornamos a informação ainda mais relevante para os usuários exibindo porcentagens e médias de algumas categorias.
+## 2. Definição do Projeto.
 
-O projeto todo foi desenvolvido utilizando apenas vanilla JavaScript, HTML5 e CSS3.
+A princípio o site foi desenvolvido para que o usuário pudesse navegar de forma simples e prática, dando destaque aos cards dos personagens e as informações mais relevantes que o usuário deseja encontrar, conforme os estudos realizados através das pesquisas e levantamento das _Histórias de usuários_, já disponibilizada no projeto. Devido a série possuir muitos personagens, e cada um deles com diferentes características, visamos que através dos filtros implementados, a busca ficaria mais fácil e rápida, facilitando também a escolha de quais episódios desejam assistir.
 
-[CONFIRA O PROJETO CLICANDO AQUI!](https://vivisoares.github.io/SAP007-data-lovers/)
+Implementamos também, a página de _CURIOSIDADES_ que através de nossas pesquisas de usuário, identificamos que era uma parte bastante relevante para eles. Assim como a página _PARA MARATONAR_ e o link _Monte o seu personagem_ que direciona nossos usuário para um site muito bacana onde é possível montar mesmo seu personagem nesse mundo muito louco do universo Rick and Morty.a de quais episódios desejam assistir.
 
-## 3. Interface do usuário
+## 3. Interface anterior do projeto
 
-O layout da aplicação foi pensado deste o inicio para ser bem divertido e colorido e a paleta de cores utilizada foi baseada nas cores utilizadas na própria série.
+Essa era a primeira interface do projeto.
 
-Paletas de cores:
+![Projeto Anterior](https://media1.giphy.com/media/C0D6kHOUC5XaQuSlUv/giphy.gif?cid=790b76119df9aa375cbaa2e1e65108a3249a4602695f29ba&rid=giphy.gif&ct=g)
 
-<div align="center">
-<img src="https://user-images.githubusercontent.com/97405991/157973254-dd72c90d-edfc-4619-85bd-aa2d74661200.jpeg" width=600>
-</div>
+## 4. Interface atual do projeto
 
-Desenvolvemos uma plataforma de fácil a navegação e bastante intuitiva para ser acessível a todo tipo de público, além de trazer uma resposta rápida na busca por informações.
+No projeto atual, na página de personagens, implementamos um campo onde o usuário tem a opção de pesquisar pelo nome do personagem, acrescentamos também um terceiro botão de seleção com o gênero dos personagens, ampliando as suas ações de pesquisa, incluímos também, um botão para limpar os campos de pesquisas, para que o usuário possa fazer uma outra pesquisa começando do zero.
 
-<div align="center">
-<img src="https://user-images.githubusercontent.com/97405991/158296782-54b2d4ee-d993-4f6d-ab93-d245525b1d86.png" width=500>
-</div>
+Nos cards, incluímos a informação de quais epsódios cada personagem aparece, facilitando para que o usuário possa escolher qual epsódio assistir, baseado na aparição de determinado personagem.
 
-A Princípio a ideia era trabalhamos apenas com 2 telas, porem conforme fomos desenvolvendo percebemos que estaríamos lidando com muitos dados e sentimos a necessidade de criar uma página exclusiva para a exibição dos Cards e cálculos agregados.
+Melhoramos a página Home, onde fala um pouquinho mais sobre o que é a série e seus personagens, temos também a inclusão da página de Curiosidades e também da página Para Maratonar, além de toda uma restruturação e repaginação da página.
 
-<div align="center">
-<img src="https://user-images.githubusercontent.com/97405991/158302922-16bf2e6d-ec5c-4dc1-97b1-7e9e858c6d8a.jpg" width=500>
-</div>
+#### Página Home:
 
-Optamos por imprimir os dados dos personagens em formato de Cards pois acreditamos que o conteúdo fica bem organizado e de fácil legibilidade tornando a experiência do usuário mais eficiente ao selecionar a parte do conteúdo que deseja interagir.
+<img src="readme.img/home.png">
 
-<div align="center">
-<img src="https://user-images.githubusercontent.com/97405991/158298063-370ecfeb-bc49-454c-b522-a8fcc6f5ca85.jpeg" width=500>
-</div>
+#### Página Personagens:
+![Novo Projeto - Página Personagens](https://media1.giphy.com/media/EQ3Ln2miAW1Pv3arIt/giphy.gif?cid=790b76114c7d5eaba65d5753ea6d721be2f65481b7559394&rid=giphy.gif&ct=g)
 
-Além disso o projeto possui um design responsivo possibilitando a experiência do usuário em qualquer dispositivo, seja em grandes telas, tablets ou celulares.
+#### Página Curiosidades:
 
-<a href="https://www.loom.com/share/79c8d452bce044b4a572079d094ad84e">
-    <p></p></a>
-    <img style="max-width:400px;" src="https://cdn.loom.com/sessions/thumbnails/79c8d452bce044b4a572079d094ad84e-with-play.gif">
+![Novo Projeto - Página Curiosidades](https://media4.giphy.com/media/Xc3QremKO5yNu4hUIz/giphy.gif?cid=790b761178b869b0f394b091c37adee26059993a2686bb76&rid=giphy.gif&ct=g)
 
-A interface permite ao usuário:
+#### Página Para Maratonar:
 
-- Visualizar cards que possuem dados de todos os personagens da série.
-- Filtrar esses dados através de categorias.
-- Ordenar todos cards ou por categoria. (De A-z ou Z-A)
-- Visualizar informações de média realizada com cálculos agregados.
-- Visualizar as plataformas onde pode assistir episódios da série.
-- E ser direcionado a um site onde o usuário pode criar um novo personagem para a série.
+<img src="readme.img/paraMaratonar.png">
 
-## 4. Autoras
+## 5. Histórias de usuários.
 
-| [<img src="https://avatars.githubusercontent.com/u/97251498?v=4" width=115><br><sub>Fernanda Monteiro</sub>](https://www.linkedin.com/in/fe-monteiro/) | [<img src="https://avatars.githubusercontent.com/u/34221101?v=4" width=115><br><sub>Larissa Moreira</sub>](https://www.linkedin.com/in/la4ri/) |     |
-| :----------------------------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------------: | :-: |
+**1**. "O usuário que está assistindo a série, gostaria de saber mais sobre os personagens, e em quais episódios eles aparecem, para que assim possam escolher melhor quais episódios assistirem".
+
+#### Critérios de aceitação:
+- [x] Ver os personagens em cards.
+- [x] Ver as informações de cada personagem assim como os episódios em que aparecem.
+
+**2**. "O usuário deseja ver em cards o(s) personagem(ns) conforme a sua espécie, gênero, ou status".
+
+#### Critérios de aceitação:
+- [x] O usuário consegue filtrar por espécie, gênero e status.
+
+**3**. "O usuário quer ver na tela o card com a imagem e as informações do(s) personagem(ns) conforme digita o nome do personagem e também em ordem crescente e decrescente".
+
+#### Critérios de aceitação:
+- [x] O usuário pode pesquisar personagens por nome e ver os cards com as informações do mesmo.
+- [x] O usuário consegue ordenar para ver os personagens em ordem crescente e decrescente.
+
+**4**. "O usuário quer ver na tela a informação de quantos personagens representa determinado filtro e a sua porcentagem em relação ao total de personagens da série".
+
+#### Critérios de aceitação:
+- [x] O usuário consegue ver uma curiosidade conforme o filtro realizado, mostrando o total dos personagens e a média que representa determinado filtro.
+
+#### Definição de pronto:
+- [x] Passar em 100% nos testes.
+- [x] Padrão de código: ";" ao final da linha de código e aspas duplas.
+- [x] Sem comentários.
+- [x] Subir pro github.
+- [x] Sem conflitos/bugs.
+
+## 6. Testes de usabilidade.
+Foram realizados testes de usabilidades com pessoas de diferentes faixas etárias:
+
+***Usuários adultos na faixa de idade de 36-45 anos:***
+- Gostaria de ver as imagens dos personagens e as principais informações deles já nos cards, inclusive em quais epsódios eles aparecem.
+
+Solução: Colocamos as principais informações na frente do card junto com o nome e a imagem do personagem.
+
+***Usuários jovens na faixa de idade de 26-35 anos:***
+- Gostariam de saber quais canais é possível assistir os epsódios da série.
+
+Solução: Criamos uma página Para Maratonar que direciona os usuários para as páginas oficiais da série.
+
+***Usuários jovens na faixa de idade de 18-25 anos:***
+- Gostariam de ver as curiosidades sobre a série, de forma simples e rápida.
+
+Solução: Criamos uma página Curiosidades que leva o usuário pra dentro da dimensão do Rick and Morty e os permite descobrir as curiosidades da série.
+E na página Home, criamos um link que leva o usuário á um site muito divertido que permite que eles próprios criem diversos avatares com características dos personagens da série.
+
+## 7. Tecnologias Utilizadas.
+- HTML 5
+- CSS3
+- JavaScript Vanilla
+- Node.js
+- Git
+- GitHub
+- GitHUb Pages
+- Jest
+
+## 8. Considerações.
+
+A refatoração desse código que deu essa nova cara no site foi desenvolvida por
+
+[_Daiane Gonçalves_](https://github.com/daianeex)
+
+[_Daiane Oltramari_](https://github.com/daianeoltramari)
+
+[_Fernanda Monteiro_](https://github.com/Fe-Monteiro)
+
+[_Jaqueline Oliveira_](https://github.com/jaquelinedeoliveira93)
+
+[_Jéssika Mirella_](https://github.com/JessikaMirella)
+
+[_Larissa Moreira_](https://github.com/la4ri)
+
+Esse desafio que foi baseado em cima de nosso segundo projeto do Bootcamp e nos ensinou sobre:
+- Manipulação do DOM, Objetos e Array;
+- Funções;
+- Desenvolvimento de testes unitários;
+- Responsividade;
+- UX Design;
+- Cálculo agregado;
+- GitHub;
+- Eslint;
+- Aprender a aprender;
+
+Agradecemos por esse grande desafio, pela parceria das colegas do <strong>Squad Dimension 007</strong>, mentoras e psicólogas.

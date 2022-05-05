@@ -101,12 +101,11 @@ footer a {
 }
 
 .texto-curiosidades,
-.fontes p {
+.fontes a{
   width: 90%;
   margin-left: auto;
   margin-right: auto;
   color: #ffffff;
-  text-align: justify;
 }
 .barra {
   background-color: #d9d271;
@@ -268,8 +267,7 @@ input:checked ~ label .hamburguer:after {
     padding-bottom: 2%;
   }
   .texto-curiosidades,
-  .fontes p,
-  a {
+  .fontes p{
     width: 90%;
     margin-left: auto;
     margin-right: auto;

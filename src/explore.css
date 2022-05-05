@@ -148,7 +148,7 @@ footer a {
   background-color: white;
   border-color: #9fe1e2;
   border-style: groove;
-  height: 21.75em;
+  height: 20em;
   width: 12.5em;
   border-radius: 0.313em;
   box-shadow: 0 0 0.625em rgba(0, 0, 0, 0.2);
@@ -180,7 +180,7 @@ footer a {
   font-size: 1em;
   border: 0.125em solid;
   position: relative;
-  width: 6%;
+  width: 10%;
   padding-bottom: 1.188em;
 }
 
@@ -510,5 +510,5 @@ input:checked~label .hamburguer:after {
 @media (min-width: 600px) and (max-width: 1190px){
   .pesquisar{
     width: 80%;
-  } 
+  }
 }

@@ -54,7 +54,7 @@ Melhoramos a página Home, onde fala um pouquinho mais sobre o que é a série e
 <img src="readme.img/home.png">
 
 #### Página Personagens:
-![Novo Projeto - Página Personagens](https://media1.giphy.com/media/EQ3Ln2miAW1Pv3arIt/giphy.gif?cid=790b76114c7d5eaba65d5753ea6d721be2f65481b7559394&rid=giphy.gif&ct=g)
+![Novo Projeto - Página Personagens](https://media.giphy.com/media/EQ3Ln2miAW1Pv3arIt/giphy.gif)
 
 #### Página Curiosidades:
 

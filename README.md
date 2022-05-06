@@ -58,7 +58,7 @@ Melhoramos a página Home, onde fala um pouquinho mais sobre o que é a série e
 
 #### Página Curiosidades:
 
-![Novo Projeto - Página Curiosidades](https://media0.giphy.com/media/Xc3QremKO5yNu4hUIz/giphy.gif)
+![Novo Projeto - Página Curiosidades](https://media1.giphy.com/media/MwxnMCeTxNUBXkcifl/giphy.gif?cid=790b7611f45b84271648800a6b12cca9d5252376e2c30019&rid=giphy.gif&ct=g)
 
 #### Página Para Maratonar:
 

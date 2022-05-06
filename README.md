@@ -25,7 +25,7 @@
 
 Rick é um cientista alcoólatra de 70 anos extremamente inteligente que foi morar com a família de sua filha Beth, uma cirurgiã cardíaca de equinos. Ele está sempre em busca de grandes experiências e divide seu tempo entre desenvolver projetos altamente tecnológicos em seu laboratório (garagem da casa da Beth), e em levar seu neto de 14 anos Morty em aventuras perigosas e surreais, indo parar até em diversas dimensões e realidades paralelas. Ele é bem esquentado e sempre sobra para seu neto, Morty, que o acompanha nessas expedições. Combinados com tensões preexistentes dentro da família, esses eventos causam ao sensível Morty muita angústia em casa e na escola.
 
-## 1. Resumo do projeto.
+## 1. Resumo do Projeto.
 
 **_Rick and Morty Lovers_** foi um novo desafio lançado no Bootcamp do <Laboratória>, onde nos reunimos em squads e tínhamos como desafio escolhermos um determinado projeto de alguma das integrantes e implementarmos melhorias, buscamos então, um projeto que já gostávamos e implementamos várias outras funcionalidades legais que continham nos outros projetos das outras colegas do squad, visando juntar em um só site, o melhor conteúdo para entretenimento do nosso público.
 
@@ -35,13 +35,13 @@ A princípio o site foi desenvolvido para que o usuário pudesse navegar de form
 
 Implementamos também, a página de _CURIOSIDADES_ que através de nossas pesquisas de usuário, identificamos que era uma parte bastante relevante para eles. Assim como a página _PARA MARATONAR_ e o link _Monte o seu personagem_ que direciona nossos usuário para um site muito bacana onde é possível montar mesmo seu personagem nesse mundo muito louco do universo Rick and Morty.a de quais episódios desejam assistir.
 
-## 3. Interface anterior do projeto
+## 3. Interface Anterior do Projeto.
 
 Essa era a primeira interface do projeto.
 
 ![Projeto Anterior](https://media1.giphy.com/media/C0D6kHOUC5XaQuSlUv/giphy.gif?cid=790b76119df9aa375cbaa2e1e65108a3249a4602695f29ba&rid=giphy.gif&ct=g)
 
-## 4. Interface atual do projeto
+## 4. Interface Atual do Projeto.
 
 No projeto atual, na página de personagens, implementamos um campo onde o usuário tem a opção de pesquisar pelo nome do personagem, acrescentamos também um terceiro botão de seleção com o gênero dos personagens, ampliando as suas ações de pesquisa, incluímos também, um botão para limpar os campos de pesquisas, para que o usuário possa fazer uma outra pesquisa começando do zero.
 
@@ -58,13 +58,13 @@ Melhoramos a página Home, onde fala um pouquinho mais sobre o que é a série e
 
 #### Página Curiosidades:
 
-![Novo Projeto - Página Curiosidades](https://media4.giphy.com/media/Xc3QremKO5yNu4hUIz/giphy.gif?cid=790b761178b869b0f394b091c37adee26059993a2686bb76&rid=giphy.gif&ct=g)
+![Novo Projeto - Página Curiosidades](https://media0.giphy.com/media/Xc3QremKO5yNu4hUIz/giphy.gif)
 
 #### Página Para Maratonar:
 
 <img src="readme.img/paraMaratonar.png">
 
-## 5. Histórias de usuários.
+## 5. Histórias de Usuários.
 
 **1**. "O usuário que está assistindo a série, gostaria de saber mais sobre os personagens, e em quais episódios eles aparecem, para que assim possam escolher melhor quais episódios assistirem".
 
@@ -95,7 +95,7 @@ Melhoramos a página Home, onde fala um pouquinho mais sobre o que é a série e
 - [x] Subir pro github.
 - [x] Sem conflitos/bugs.
 
-## 6. Testes de usabilidade.
+## 6. Testes de Usabilidade.
 Foram realizados testes de usabilidades com pessoas de diferentes faixas etárias:
 
 ***Usuários adultos na faixa de idade de 36-45 anos:***
@@ -151,4 +151,4 @@ Esse desafio que foi baseado em cima de nosso segundo projeto do Bootcamp e nos 
 - Eslint;
 - Aprender a aprender;
 
-Agradecemos por esse grande desafio, pela parceria das colegas do <strong>Squad Dimension 007</strong>, mentoras e psicólogas.
+Agradecemos por esse grande desafio, pela parceria das colegas do <strong>Squad Dimensão 007</strong>, mentoras e psicólogas.

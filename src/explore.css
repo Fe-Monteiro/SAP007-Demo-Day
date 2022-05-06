@@ -173,7 +173,7 @@ footer a {
 }
 
 .button {
-  color: #cf93dd;
+  color: black;
   background-color: whitesmoke;
   border-radius: 0.625em;
   cursor: pointer;
@@ -184,7 +184,7 @@ footer a {
   padding-bottom: 1.188em;
 }
 
-/*Botão top*/
+/Botão top/
 .fixed-button {
   display: flex;
   justify-content: center;
@@ -278,6 +278,7 @@ footer a {
   position: fixed;
   top: 1.563em;
   left: 1.563em;
+  display: none;
 }
 
 .hamburguer {
@@ -458,6 +459,7 @@ input:checked~label .hamburguer:after {
     top: 0;
     left: 0;
     z-index: 1;
+    display: block;
   }
 
   #icone {

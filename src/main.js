@@ -1,7 +1,8 @@
 import data from "./data/rickandmorty/rickandmorty.js";
 import { filterStatus, filterSpecie, ordination, average, searchName, filterGender } from './data.js';
 
-const allData = data.results
+const allData = data.results;
+const showFilterPercentage = document.getElementById("averageCalculation");
 const printingAllCards = (characters) => {
   let showingCards = "";
   for (let character of characters) {
@@ -11,7 +12,7 @@ const printingAllCards = (characters) => {
     <dd class="p-card">Status: ${character.status}</dd>
     <dd class="p-card">Especie: ${character.species}</dd>
     <dd class="p-card">Gênero: ${character.gender}</dd>
-    <dd class="p-card">Origen: ${character.origin.name}</dd>
+    <dd class="p-card">Origem: ${character.origin.name}</dd>
     <dd class="p-card">Aparece no(s) episódio(s): ${character.episode.map((i) => i.replaceAll(/[^0-9$]/g, " "))}.</dd>
     </dl>`;
   }
@@ -25,16 +26,16 @@ speciesFilter.addEventListener("change", (event) => {
 
   if (statusFilter.value) {
     speciesCards = speciesCards.filter((item) => {
-      return item.status === statusFilter.value
-    })
+      return item.status === statusFilter.value;
+    });
   }
 
   if (genderFilter.value) {
     speciesCards = speciesCards.filter((item) => {
-      return item.gender === genderFilter.value
-    })
+      return item.gender === genderFilter.value;
+    });
   }
-  document.getElementById("averageCalculation").innerHTML = `Essa categoria representa ${average(allData.length, speciesCards.length)}% de todos os personagens`
+  showFilterPercentage.innerHTML = `Essa categoria representa ${average(allData.length, speciesCards.length)}% de todos os personagens`;
   printingAllCards(speciesCards);
 })
 
@@ -45,15 +46,15 @@ statusFilter.addEventListener("change", (event) => {
 
   if (speciesFilter.value) {
     statusCards = statusCards.filter((item) => {
-      return item.species === speciesFilter.value
-    })
+      return item.species === speciesFilter.value;
+    });
   }
   if (genderFilter.value) {
     statusCards = statusCards.filter((item) => {
-      return item.gender === genderFilter.value
-    })
+      return item.gender === genderFilter.value;
+    });
   }
-  document.getElementById("averageCalculation").innerHTML = `Essa categoria representa ${average(allData.length, statusCards.length)}% de todos os personagens`
+  showFilterPercentage.innerHTML = `Essa categoria representa ${average(allData.length, statusCards.length)}% de todos os personagens`;
   printingAllCards(statusCards);
 })
 
@@ -63,28 +64,28 @@ genderFilter.addEventListener("change", (event) => {
 
   if (speciesFilter.value) {
     genderCards = genderCards.filter((item) => {
-      return item.species === speciesFilter.value
-    })
+      return item.species === speciesFilter.value;
+    });
   }
   if (statusFilter.value) {
     genderCards = genderCards.filter((item) => {
-      return item.status === statusFilter.value
-    })
+      return item.status === statusFilter.value;
+    });
 
   }
-  document.getElementById("averageCalculation").innerHTML = `Essa categoria representa ${average(allData.length, genderCards.length)}% de todos os personagens`
+  showFilterPercentage.innerHTML = `Essa categoria representa ${average(allData.length, genderCards.length)}% de todos os personagens`;
   printingAllCards(genderCards);
 })
 
 const ordinationAz = document.querySelector("#ordination");
-ordinationAz.addEventListener("change", function (event) {
+ordinationAz.addEventListener("change", (event) => {
   const characters = ordination(allData, event.target.value);
   printingAllCards(characters);
 })
 
 const searchCharacterName = document.getElementById("text-search");
-function searchCharacterNames(e) {
-  const charactersName = searchName(data.results, e.target.value);
+function searchCharacterNames(event) {
+  const charactersName = searchName(allData, event.target.value);
   return printingAllCards(charactersName);
 }
 searchCharacterName.addEventListener("keyup", searchCharacterNames);
@@ -100,5 +101,5 @@ function clearFilters(event) {
   genderFilter.options[(genderFilter.selectedIndex = 0)];
   ordinationAz.options[(ordinationAz.selectedIndex = 0)];
   searchCharacterName.value = "";
-  selectButtonClearFilters.innerHTML = "Limpar Filtros";
+  showFilterPercentage.innerHTML = "Você está visualizando 100% dos personagens";
 }

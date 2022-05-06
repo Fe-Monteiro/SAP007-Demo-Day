@@ -8,12 +8,12 @@
 
 - [1. Resumo do Projeto](#1-resumo-do-projeto)
 - [2. Definição do Projeto](#2-definição-do-projeto)
-- [3. Interface anterior do projeto](#3-interface-anterior-do-projeto)
-- [4. Interface atual do projeto](#4-interface-atual-do-projeto)
-- [5. Histórias de usuários](#6-histórias-de-usuários)
-- [6. Testes de Usabilidade](#7-testes-de-usabilidade)
-- [7. Tecnologias Utilizadas](#8-tecnologias-utilizadas)
-- [8. Considerações](#9-considerações)
+- [3. Interface Anterior do Projeto](#3-interface-anterior-do-projeto)
+- [4. Interface Atual do Projeto](#4-interface-atual-do-projeto)
+- [5. Histórias de Usuários](#5-histórias-de-usuários)
+- [6. Testes de Usabilidade](#6-testes-de-usabilidade)
+- [7. Tecnologias Utilizadas](#7-tecnologias-utilizadas)
+- [8. Considerações](#8-considerações)
 
 ---
 

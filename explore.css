@@ -1,16 +1,3 @@
- :root {
-  --color-error: red;
-  --font-color-button: white;
-  --gray-default: gray;
-  --purple-border-body: #6a2b7b;
-  --purple-gradient: rgb(103, 41, 125);
-  --purple-hover: rgb(102, 32, 126);
-  --yellow-border-body: #fbc41c;
-  --yellow-gradient: #fac31c;
-  --yellow-hover: rgb(212, 166, 28);
-  --yellow-font: #ecb200;
-}
-
 * {
   margin: 0;
 }
@@ -112,7 +99,6 @@ footer a {
   padding: 1.25em;
   justify-content: space-around;
   flex-direction: row;
-  padding-top: 0.5em;
   font-size: 1em;
   background-color: #f0e948;
   margin-bottom: 1em;
@@ -128,9 +114,11 @@ footer a {
 
 .selectorButton {
   font-size: 1em;
-  margin-left: 0.5em;
+  margin-left: 10%;
   border: 0.125em solid #cf93dd;
   border-radius: 0.625em;
+  display: flex;
+  justify-content: center;
 }
 
 .image-card {
@@ -160,7 +148,7 @@ footer a {
   background-color: white;
   border-color: #9fe1e2;
   border-style: groove;
-  height: 18.75em;
+  height: 20em;
   width: 12.5em;
   border-radius: 0.313em;
   box-shadow: 0 0 0.625em rgba(0, 0, 0, 0.2);
@@ -185,18 +173,17 @@ footer a {
 }
 
 .button {
-  color: #cf93dd;
+  color: black;
   background-color: whitesmoke;
   border-radius: 0.625em;
   cursor: pointer;
   font-size: 1em;
   border: 0.125em solid;
   position: relative;
-  width: 6%;
+  width: 10%;
   padding-bottom: 1.188em;
 }
 
-/*Botão top*/
 .fixed-button {
   display: flex;
   justify-content: center;
@@ -271,6 +258,7 @@ footer a {
   z-index: 1;
   top: 1.25em;
   left: 1.25em;
+  display: none;
 }
 
 #check:checked~.barra {
@@ -289,6 +277,7 @@ footer a {
   position: fixed;
   top: 1.563em;
   left: 1.563em;
+  display: none;
 }
 
 .hamburguer {
@@ -313,14 +302,6 @@ footer a {
   transition: 0.5s ease-in-out;
 }
 
-.barra {
-  background-color: #d9d271;
-  height: 100%;
-  width: 15.625em;
-  position: fixed;
-  transition: all 0.2s linear;
-  left: -15.625em;
-}
 
 .menu-text {
   width: 100%;
@@ -371,36 +352,6 @@ footer a {
   transition-delay: 0.3s;
 }
 
-.mburg {
-  border-radius: 50%;
-  width: 3.75em;
-  height: 3.75em;
-  position: fixed;
-  top: 1.563em;
-  left: 1.563em;
-}
-
-.hamburguer {
-  position: relative;
-  display: none;
-  background: #101010;
-  width: 1.875em;
-  height: 0.188em;
-  top: 1.813em;
-  left: 0.938em;
-  transition: 0.5s ease-in-out;
-}
-
-.hamburguer:before,
-.hamburguer:after {
-  background: #0a0a0a;
-  content: "";
-  display: block;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  transition: 0.5s ease-in-out;
-}
 
 .hamburguer:before {
   top: -0.625em;
@@ -424,7 +375,7 @@ input:checked~label .hamburguer:after {
   bottom: 0;
 }
 
-@media (min-width: 300px) and (max-width: 600px) {
+@media (min-width: 300px) and (max-width: 955px) {
 
   .row {
     -webkit-flex-direction: column;
@@ -474,6 +425,7 @@ input:checked~label .hamburguer:after {
   .hamburguer:before,
   .hamburguer:after, .hamburguer {
     background: #fff;
+    display: block;
   }
 
   footer {
@@ -506,10 +458,12 @@ input:checked~label .hamburguer:after {
     top: 0;
     left: 0;
     z-index: 1;
+    display: block;
   }
 
   #icone {
     z-index: 2;
+    display:block ;
   }
 
   .fixed-button{
@@ -517,5 +471,10 @@ input:checked~label .hamburguer:after {
     right: 3px;
     width: 33px;
     height: 31px;
+  }
+}
+@media (min-width: 600px) and (max-width: 1190px){
+  .pesquisar{
+    width: 80%;
   }
 }

@@ -24,15 +24,16 @@ speciesFilter.addEventListener("change", (event) => {
   let speciesCards = filterSpecie(allData, event.target.value);
 
   if (statusFilter.value) {
-    speciesCards = speciesCards.filter((item) =>{
+    speciesCards = speciesCards.filter((item) => {
       return item.status === statusFilter.value
     })
   }
+
   if (genderFilter.value) {
-      speciesCards = speciesCards.filter((item) =>{
-        return item.gender === genderFilter.value
-      })
-    }
+    speciesCards = speciesCards.filter((item) => {
+      return item.gender === genderFilter.value
+    })
+  }
   document.getElementById("averageCalculation").innerHTML = `Essa categoria representa ${average(allData.length, speciesCards.length)}% de todos os personagens`
   printingAllCards(speciesCards);
 })
@@ -43,14 +44,14 @@ statusFilter.addEventListener("change", (event) => {
   let statusCards = filterStatus(allData, event.target.value);
 
   if (speciesFilter.value) {
-    statusCards = statusCards.filter((item) =>{
+    statusCards = statusCards.filter((item) => {
       return item.species === speciesFilter.value
     })
   }
   if (genderFilter.value) {
-      statusCards = statusCards.filter((item) =>{
-        return item.gender === genderFilter.value
-      })
+    statusCards = statusCards.filter((item) => {
+      return item.gender === genderFilter.value
+    })
   }
   document.getElementById("averageCalculation").innerHTML = `Essa categoria representa ${average(allData.length, statusCards.length)}% de todos os personagens`
   printingAllCards(statusCards);
@@ -61,16 +62,16 @@ genderFilter.addEventListener("change", (event) => {
   let genderCards = filterGender(allData, event.target.value);
 
   if (speciesFilter.value) {
-    genderCards = genderCards.filter((item) =>{
+    genderCards = genderCards.filter((item) => {
       return item.species === speciesFilter.value
     })
   }
-    if (statusFilter.value) {
-      genderCards = genderCards.filter((item) =>{
-        return item.status === statusFilter.value
-      })
+  if (statusFilter.value) {
+    genderCards = genderCards.filter((item) => {
+      return item.status === statusFilter.value
+    })
 
-}
+  }
   document.getElementById("averageCalculation").innerHTML = `Essa categoria representa ${average(allData.length, genderCards.length)}% de todos os personagens`
   printingAllCards(genderCards);
 })
@@ -88,3 +89,16 @@ function searchCharacterNames(e) {
 }
 searchCharacterName.addEventListener("keyup", searchCharacterNames);
 
+const selectButtonClearFilters = document.getElementById("clearFiltros");
+selectButtonClearFilters.addEventListener("click", clearFilters);
+
+function clearFilters(event) {
+  event.preventDefault();
+  printingAllCards(allData);
+  speciesFilter.options[(speciesFilter.selectedIndex = 0)];
+  statusFilter.options[(statusFilter.selectedIndex = 0)];
+  genderFilter.options[(genderFilter.selectedIndex = 0)];
+  ordinationAz.options[(ordinationAz.selectedIndex = 0)];
+  searchCharacterName.value = "";
+  selectButtonClearFilters.innerHTML = "Limpar Filtros";
+}
